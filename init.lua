@@ -18,7 +18,7 @@ return {
   },
 
   -- Set colorscheme to use
-  colorscheme = "astrodark",
+  colorscheme = "catppuccin",
 
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
@@ -81,5 +81,16 @@ return {
     --     ["~/%.config/foo/.*"] = "fooscript",
     --   },
     -- }
+
+    vim.api.nvim_create_autocmd("User", {
+      desc = "Set number in Telescope",
+      pattern = "TelescopePreviewerLoaded",
+      command = "setlocal number",
+    })
   end,
+
+  -- wzj-zz dap
+  -- plugins = {
+  --   { "mfussenegger/nvim-dap", enabled = true },
+  -- },
 }
