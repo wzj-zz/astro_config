@@ -85,6 +85,7 @@ return {
 
     ["<leader>fj"] = { function() require("telescope.builtin").jumplist() end, desc = "Find jumplist" },
     ["<leader>fg"] = { function() require("telescope.builtin").filetypes() end, desc = "Select language" },
+    ["<leader>uq"] = { function() require("notify").dismiss() end, desc = "Dismiss notify message" },
 
     ["<leader>,w"] = { "<cmd>w !cmd.exe /c xt -x<cr>", desc = "xt exec on win" },
     ["<leader>,l"] = { "<cmd>w !wsl.exe xt -x<cr>", desc = "xt exec on wsl" },
