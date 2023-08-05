@@ -61,26 +61,11 @@ return {
     ["<leader>br"] = { "<cmd>e!<cr>", desc = "Revert Buffer" },
     ["<leader>b"] = { name = "Buffers" },
 
-    ["<leader>si"] = {
-      function()
-        local aerial_avail, _ = pcall(require, "aerial")
-        if aerial_avail then
-          require("telescope").extensions.aerial.aerial()
-        else
-          require("telescope.builtin").lsp_document_symbols()
-        end
-      end,
-      desc = "Search symbols",
-    },
-
     ["<leader>ss"] = {
       function() require("telescope.builtin").current_buffer_fuzzy_find() end,
       desc = "Find words in current buffer",
     },
-    ["<leader>sn"] = {
-      "/\\v",
-      desc = "Search next with very magic",
-    },
+
     ["<leader>s"] = { name = "Search" },
 
     ["<leader>fj"] = { function() require("telescope.builtin").jumplist() end, desc = "Find jumplist" },
