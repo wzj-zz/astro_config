@@ -12,8 +12,12 @@ return {
     opts = {
       modes = {
         search = {
-          enabled = false,
+          enabled = true,
         },
+      },
+      label = {
+        before = true,
+        after = false,
       },
     },
 

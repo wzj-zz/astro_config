@@ -96,11 +96,29 @@ return {
   v = {
     ["<C-j>"] = { "<S-j>", desc = "merge lines" },
     ["<C-S-j>"] = { "g<S-j>", desc = "merge lines without space" },
+
+    ["<C-S-Left>"] = { "b", desc = "" },
+    ["<C-S-Right>"] = { "e", desc = "" },
+    ["<S-Up>"] = { "k", desc = "" },
+    ["<S-Down>"] = { "j", desc = "" },
+    ["<S-Left>"] = { "h", desc = "" },
+    ["<S-Right>"] = { "l", desc = "" },
   },
 
   -- Insert mode
   i = {
     ["<C-s>"] = { "<cmd>w!<cr><Esc>", desc = "Force write" },
+    ["<C-v>"] = { "<cmd>normal P<cr><Right>", desc = "Paste from clipboard" },
+
+    ["<C-h>"] = { "<C-w>", desc = "Delete word" },
+    ["<C-S-Left>"] = { '_<Esc>mz"_xv`z<BS>ob<Space>', desc = "" },
+    ["<C-S-Right>"] = { '_<Esc>my"_xi<S-Right><C-o><BS>_<Esc>mz"_xv`yo`z', desc = "" },
+    ["<S-End>"] = { "<cmd>normal v<End><cr><Esc>", desc = "" },
+    ["<S-Home>"] = { "<cmd>normal hv<Home><cr><Esc>", desc = "" },
+    ["<S-Up>"] = { "<cmd>normal vkloho<cr><Esc>", desc = "" },
+    ["<S-Down>"] = { "<cmd>normal vj<cr><Esc>", desc = "" },
+    ["<S-Left>"] = { "<Esc>v", desc = "" },
+    ["<S-Right>"] = { "<Esc>vlolo", desc = "" },
   },
 
   -- Command mode
