@@ -103,6 +103,8 @@ return {
     ["<S-Down>"] = { "j", desc = "" },
     ["<S-Left>"] = { "h", desc = "" },
     ["<S-Right>"] = { "l", desc = "" },
+    ["<S-PageUp>"] = { "<C-u>", desc = "" },
+    ["<S-PageDown>"] = { "<C-d>", desc = "" },
   },
 
   -- Insert mode
@@ -119,6 +121,8 @@ return {
     ["<S-Down>"] = { "<cmd>normal vj<cr><Esc>", desc = "" },
     ["<S-Left>"] = { "<Esc>v", desc = "" },
     ["<S-Right>"] = { "<Esc>vlolo", desc = "" },
+    ["<S-PageUp>"] = { "<Esc>v<C-u>", desc = "" },
+    ["<S-PageDown>"] = { "<Esc>v<C-d>", desc = "" },
   },
 
   -- Command mode
