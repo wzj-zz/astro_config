@@ -88,9 +88,4 @@ return {
       command = "setlocal number",
     })
   end,
-
-  -- wzj-zz dap
-  -- plugins = {
-  --   { "mfussenegger/nvim-dap", enabled = true },
-  -- },
 }

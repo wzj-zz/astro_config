@@ -70,6 +70,12 @@ return {
 
     ["<leader>fj"] = { function() require("telescope.builtin").jumplist() end, desc = "Find jumplist" },
     ["<leader>fg"] = { function() require("telescope.builtin").filetypes() end, desc = "Select language" },
+    ["<leader>fs"] = { "<cmd>SessionManager! load_session<cr>", desc = "Search sessions" },
+    ["<leader>fd"] = { "<cmd>SessionManager! delete_session<cr>", desc = "Delete session" },
+    ["<leader>f,"] = { "<cmd>SessionManager! save_current_session<cr>", desc = "Save this session" },
+    ["<leader>f."] = { "<cmd>SessionManager! load_current_dir_session<cr>", desc = "Load current directory session" },
+    ["<leader>fl"] = { "<cmd>SessionManager! load_last_session<cr>", desc = "Load last session" },
+
     ["<leader>uq"] = { function() require("notify").dismiss() end, desc = "Dismiss notify message" },
 
     ["<leader>,w"] = { "<cmd>w !cmd.exe /c xt -x<cr>", desc = "xt exec on win" },
