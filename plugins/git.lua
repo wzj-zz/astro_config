@@ -69,10 +69,15 @@ return {
                 [prefix .. "b"] = { actions.conflict_choose "base", desc = "Take Base" }, -- Choose the BASE version of a conflict
                 [prefix .. "a"] = { actions.conflict_choose "all", desc = "Take All" }, -- Choose all the versions of a conflict
                 [prefix .. "0"] = { actions.conflict_choose "none", desc = "Take None" }, -- Delete the conflict region
-              },
-              diff2 = {
-                { "n", "<M-j>", function() vim.cmd "normal ]c" end, { desc = "Next diff" } },
-                { "n", "<M-k>", function() vim.cmd "normal [c" end, { desc = "Previous diff" } },
+
+                ["<M-j>"] = { function() vim.cmd "normal ]c" end, mode = { "n" }, desc = "Next diff" },
+                ["<M-k>"] = { function() vim.cmd "normal [c" end, mode = { "n" }, desc = "Previous diff" },
+                ["<tab>"] = { actions.select_next_entry, mode = { "n" }, desc = "Open the diff for the next file" },
+                ["<S-tab>"] = {
+                  actions.select_prev_entry,
+                  mode = { "n" },
+                  desc = "Open the diff for the previous file",
+                },
               },
               diff3 = build_keymaps {
                 [prefix .. "O"] = { actions.diffget "ours", mode = { "n", "x" }, desc = "Get Our Diff" }, -- Obtain the diff hunk from the OURS version of the file
@@ -98,10 +103,10 @@ return {
                 ["<up>"] = actions.prev_entry,
                 ["<cr>"] = actions.select_entry, -- Open the diff for the selected entry.
                 ["<2-LeftMouse>"] = actions.select_entry,
-                ["<c-b>"] = actions.scroll_view(-0.25), -- Scroll the view up
-                ["<c-f>"] = actions.scroll_view(0.25), -- Scroll the view down
+                ["<C-b>"] = actions.scroll_view(-0.25), -- Scroll the view up
+                ["<C-f>"] = actions.scroll_view(0.25), -- Scroll the view down
                 ["<tab>"] = actions.select_next_entry,
-                ["<s-tab>"] = actions.select_prev_entry,
+                ["<S-tab>"] = actions.select_prev_entry,
               },
               file_history_panel = build_keymaps {
                 j = actions.next_entry,
@@ -116,11 +121,11 @@ return {
                 ["<up>"] = actions.prev_entry,
                 ["<cr>"] = actions.select_entry,
                 ["<2-LeftMouse>"] = actions.select_entry,
-                ["<C-A-d>"] = actions.open_in_diffview, -- Open the entry under the cursor in a diffview
-                ["<c-b>"] = actions.scroll_view(-0.25),
-                ["<c-f>"] = actions.scroll_view(0.25),
+                ["<M-o>"] = actions.open_in_diffview, -- Open the entry under the cursor in a diffview
+                ["<C-b>"] = actions.scroll_view(-0.25),
+                ["<C-f>"] = actions.scroll_view(0.25),
                 ["<tab>"] = actions.select_next_entry,
-                ["<s-tab>"] = actions.select_prev_entry,
+                ["<S-tab>"] = actions.select_prev_entry,
               },
               option_panel = {
                 q = actions.close,

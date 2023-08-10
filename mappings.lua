@@ -34,14 +34,9 @@ return {
       desc = "Search symbols",
     },
 
-    ["<M-j>"] = { "<cmd>normal ]f<cr>", desc = "Next function start" },
-    ["<S-M-j>"] = { "<cmd>normal ]F<cr>", desc = "Next function end" },
-    ["<M-k>"] = { "<cmd>normal [f<cr>", desc = "Previous function start" },
-    ["<S-M-k>"] = { "<cmd>normal [F<cr>", desc = "Previous function end" },
-    ["<M-h>"] = { "<cmd>normal [k<cr>", desc = "Previous block start" },
-    ["<S-M-h>"] = { "<cmd>normal [K<cr>", desc = "Previous block end" },
-    ["<M-l>"] = { "<cmd>normal ]k<cr>", desc = "Next block start" },
-    ["<S-M-l>"] = { "<cmd>normal ]K<cr>", desc = "Next block end" },
+    -- ["<M-j>"] = { "<cmd>normal ]f<cr>", desc = "Next function start" },
+    -- ["<S-M-j>"] = { "<cmd>normal ]F<cr>", desc = "Next function end" },
+    -- ["<M-k>"] = { "<cmd>normal [f<cr>", desc = "Previous function start" },
     ["<M-,>"] = { "<cmd>normal [a<cr>", desc = "Previous argument start" },
     ["<M-.>"] = { "<cmd>normal ]a<cr>", desc = "Next argument start" },
 
@@ -55,11 +50,19 @@ return {
       desc = "Previous buffer",
     },
 
-    ["<C-Tab>"] = { "<cmd>normal ]t<cr>", desc = "Next Tab" },
-    ["<C-S-Tab>"] = { "<cmd>normal [t<cr>", desc = "Previous Tab" },
+    ["<M-h>"] = { "<cmd>tabprevious<cr>", desc = "Previous Tab" },
+    ["<S-M-h>"] = { "<cmd>tabfirst<cr>", desc = "First Tab" },
+    ["<M-l>"] = { "<cmd>tabnext<cr>", desc = "Next Tab" },
+    ["<S-M-l>"] = { "<cmd>tablast<cr>", desc = "Last Tab" },
+    ["<M-q>"] = { "<cmd>tabclose<cr>", desc = "Close Tab" },
 
     ["<leader>br"] = { "<cmd>e!<cr>", desc = "Revert Buffer" },
     ["<leader>b"] = { name = "Buffers" },
+
+    ["<leader>ss"] = {
+      function() require("telescope.builtin").current_buffer_fuzzy_find() end,
+      desc = "Find words in current buffer",
+    },
 
     ["<leader>fj"] = { function() require("telescope.builtin").jumplist() end, desc = "Find jumplist" },
     ["<leader>fg"] = { function() require("telescope.builtin").filetypes() end, desc = "Select language" },
