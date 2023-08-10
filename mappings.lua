@@ -61,13 +61,6 @@ return {
     ["<leader>br"] = { "<cmd>e!<cr>", desc = "Revert Buffer" },
     ["<leader>b"] = { name = "Buffers" },
 
-    ["<leader>ss"] = {
-      function() require("telescope.builtin").current_buffer_fuzzy_find() end,
-      desc = "Find words in current buffer",
-    },
-
-    ["<leader>s"] = { name = "Search" },
-
     ["<leader>fj"] = { function() require("telescope.builtin").jumplist() end, desc = "Find jumplist" },
     ["<leader>fg"] = { function() require("telescope.builtin").filetypes() end, desc = "Select language" },
     ["<leader>fs"] = { "<cmd>SessionManager! load_session<cr>", desc = "Search sessions" },
