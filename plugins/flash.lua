@@ -18,6 +18,10 @@ return {
       label = {
         before = true,
         after = false,
+        rainbow = {
+          enabled = true,
+          shade = 5,
+        },
       },
     },
 
