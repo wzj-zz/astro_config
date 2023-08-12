@@ -153,6 +153,11 @@ return {
     keys = {
       { "<leader>gg", "<cmd>Neogit<CR>", desc = "Open Neogit Tab Page" },
       { "<leader>go", ":Neogit cwd=", desc = "Open Neogit Override CWD" },
+      {
+        "<leader>gf",
+        function() require("neogit").open { cwd = vim.fn.stdpath "config" .. "/lua/user" } end,
+        desc = "Open Neogit In astro_config",
+      },
     },
   },
 
