@@ -132,7 +132,6 @@ return {
 
   -- Terminal mode
   t = {
-    -- setting a mapping to false will disable it
-    -- ["<esc>"] = false,
+    ["<C-l>"] = false,
   },
 }
