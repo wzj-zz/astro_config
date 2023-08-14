@@ -59,6 +59,10 @@ return {
     ["<leader>br"] = { "<cmd>e!<cr>", desc = "Revert Buffer" },
     ["<leader>b"] = { name = "Buffers" },
 
+    ["<leader>Dd"] = { "<cmd>diffthis<cr>", desc = "Diff this" },
+    ["<leader>Dc"] = { "<cmd>diffoff<cr>", desc = "Diff off" },
+    ["<leader>D"] = { name = " Diff View" },
+
     ["<leader>ss"] = {
       function() require("telescope.builtin").current_buffer_fuzzy_find() end,
       desc = "Find words in current buffer",
