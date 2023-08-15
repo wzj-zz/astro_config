@@ -80,18 +80,9 @@ return {
 
     ["<leader>,w"] = { "<cmd>w !cmd.exe /c xt -x<cr>", desc = "xt exec on win" },
     ["<leader>,l"] = { "<cmd>w !wsl.exe xt -x<cr>", desc = "xt exec on wsl" },
-    ["<leader>,1"] = {
-      "<cmd>!wsl.exe --set-default ubuntu_1<cr><cr><cmd>w !wsl.exe xt -x<cr>",
-      desc = "xt exec on ubuntu_1",
-    },
-    ["<leader>,2"] = {
-      "<cmd>!wsl.exe --set-default ubuntu_2<cr><cr><cmd>w !wsl.exe xt -x<cr>",
-      desc = "xt exec on ubuntu_2",
-    },
-    ["<leader>,k"] = {
-      "<cmd>!wsl.exe --set-default kali-linux<cr><cr><cmd>w !wsl.exe xt -x<cr>",
-      desc = "xt exec on kali-linux",
-    },
+    ["<leader>,1"] = { "<cmd>w !wsl.exe -d ubuntu_1 xt -x<cr>", desc = "xt exec on ubuntu_1" },
+    ["<leader>,2"] = { "<cmd>w !wsl.exe -d ubuntu_2 xt -x<cr>", desc = "xt exec on ubuntu_2" },
+    ["<leader>,k"] = { "<cmd>w !wsl.exe -d kali-linux xt -x<cr>", desc = "xt exec on kali-linux" },
 
     ["<leader>,e"] = { "<cmd>cd %:h<cr><cmd>Neotree focus<cr>", desc = "Sync explorer with current buffer" },
     ["<leader>,"] = { name = "Local" },
