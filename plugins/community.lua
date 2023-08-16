@@ -43,6 +43,7 @@ return {
   { import = "astrocommunity.debugging.nvim-bqf" },
   { import = "astrocommunity.motion.mini-surround" },
   { import = "astrocommunity.motion.marks-nvim" },
+  { import = "astrocommunity.motion.vim-matchup" },
   { import = "astrocommunity.utility.telescope-fzy-native-nvim" },
   { import = "astrocommunity.file-explorer.oil-nvim" },
   { import = "astrocommunity.editing-support.rainbow-delimiters-nvim" },
