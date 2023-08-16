@@ -47,6 +47,7 @@ return {
   { import = "astrocommunity.utility.telescope-fzy-native-nvim" },
   { import = "astrocommunity.file-explorer.oil-nvim" },
   { import = "astrocommunity.editing-support.rainbow-delimiters-nvim" },
+  { import = "astrocommunity.editing-support.multicursors-nvim" },
 
   { import = "astrocommunity.utility.transparent-nvim" },
   {
