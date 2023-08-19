@@ -162,11 +162,12 @@ return {
         "<leader>gx",
         function()
           local xtools_path
-          if vim.fn.has "win64" == 1 then xtools_path = "D:\\tools" end
-          if vim.fn.has "wsl" == 1 then xtools_path = "/mnt/d/tools" end
-          require("neogit").open { cwd = xtools_path }
+          if vim.fn.has "win64" == 1 then
+            xtools_path = "D:\\tools"
+            require("neogit").open { cwd = xtools_path }
+          end
         end,
-        desc = "Open Neogit In xtools",
+        desc = "Open Neogit In xtools (only win64)",
       },
     },
   },
