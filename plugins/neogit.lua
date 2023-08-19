@@ -158,6 +158,16 @@ return {
         function() require("neogit").open { cwd = vim.fn.stdpath "config" .. "/lua/user" } end,
         desc = "Open Neogit In astro_config",
       },
+      {
+        "<leader>gx",
+        function()
+          local xtools_path
+          if vim.fn.has "win64" == 1 then xtools_path = "D:\\tools" end
+          if vim.fn.has "wsl" == 1 then xtools_path = "/mnt/d/tools" end
+          require("neogit").open { cwd = xtools_path }
+        end,
+        desc = "Open Neogit In xtools",
+      },
     },
   },
 

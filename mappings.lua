@@ -54,7 +54,7 @@ return {
     ["<S-M-h>"] = { "<cmd>tabfirst<cr>", desc = "First Tab" },
     ["<M-l>"] = { "<cmd>tabnext<cr>", desc = "Next Tab" },
     ["<S-M-l>"] = { "<cmd>tablast<cr>", desc = "Last Tab" },
-    ["<M-q>"] = { "<cmd>tabclose<cr>", desc = "Close Tab" },
+    ["<leader>q"] = { "<cmd>tabclose<cr>", desc = "Close Tab" },
 
     ["<leader>br"] = { "<cmd>e!<cr>", desc = "Revert Buffer" },
     ["<leader>b"] = { name = "Buffers" },
@@ -84,9 +84,16 @@ return {
     ["<leader>,2"] = { "<cmd>w !wsl.exe -d ubuntu_2 xt -x<cr>", desc = "xt exec on ubuntu_2" },
     ["<leader>,k"] = { "<cmd>w !wsl.exe -d kali-linux xt -x<cr>", desc = "xt exec on kali-linux" },
 
+    ["<leader>,s"] = { "<cmd>OverseerToggle<cr>", desc = "Overseer Show task" },
+    ["<leader>,r"] = { "<cmd>OverseerRun<cr>", desc = "Overseer Run task" },
+    ["<leader>,oi"] = { "<cmd>OverseerInfo<cr>", desc = "Overseer info" },
+    ["<leader>,od"] = { function() require("overseer").debug_parser() end, desc = "Overseer Parser Debug" },
+    ["<leader>,o"] = { name = "Overseer" },
+
     ["<leader>,e"] = { "<cmd>cd %:h<cr><cmd>Neotree focus<cr>", desc = "Sync explorer with current buffer" },
     ["<leader>,"] = { name = "Local" },
-    ["<leader>q"] = { "<cmd>q<cr>", desc = "Quit current buffer" },
+
+    ["<M-q>"] = { "<cmd>close<cr>", desc = "Close" },
   },
 
   -- Visual mode

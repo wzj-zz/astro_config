@@ -15,6 +15,9 @@ local polish = function()
   --   },
   -- }
 
+  local ui = require "astronvim.utils.ui"
+  ui.toggle_ui_notifications(true)
+
   vim.api.nvim_create_autocmd("User", {
     desc = "Set number in Telescope",
     pattern = "TelescopePreviewerLoaded",
