@@ -86,9 +86,9 @@ return {
 
     ["<leader>,w"] = { "<cmd>w !cmd.exe /c xt -x<cr>", desc = "xt exec on win" },
     ["<leader>,l"] = { "<cmd>w !wsl.exe xt -x<cr>", desc = "xt exec on wsl" },
-    ["<leader>,1"] = { "<cmd>w !wsl.exe -d ubuntu_1 xt -x<cr>", desc = "xt exec on ubuntu_1" },
-    ["<leader>,2"] = { "<cmd>w !wsl.exe -d ubuntu_2 xt -x<cr>", desc = "xt exec on ubuntu_2" },
-    ["<leader>,k"] = { "<cmd>w !wsl.exe -d kali-linux xt -x<cr>", desc = "xt exec on kali-linux" },
+    ["<leader>,u1"] = { "<cmd>w !wsl.exe -d ubuntu_1 xt -x<cr>", desc = "xt exec on ubuntu_1" },
+    ["<leader>,u2"] = { "<cmd>w !wsl.exe -d ubuntu_2 xt -x<cr>", desc = "xt exec on ubuntu_2" },
+    ["<leader>,kl"] = { "<cmd>w !wsl.exe -d kali-linux xt -x<cr>", desc = "xt exec on kali-linux" },
 
     ["<leader>,s"] = { "<cmd>OverseerToggle<cr>", desc = "Overseer Show task" },
     ["<leader>,r"] = { "<cmd>OverseerRun<cr>", desc = "Overseer Run task" },
@@ -97,6 +97,12 @@ return {
     ["<leader>,o"] = { name = "Overseer" },
 
     ["<leader>,e"] = { "<cmd>cd %:h<cr><cmd>Neotree focus<cr>", desc = "Sync explorer with current buffer" },
+
+    ["<leader>,1"] = { '<cmd>let @+ = expand("%:h")<cr><cmd>echo expand("%:h")<cr>', desc = "Yank directory path" },
+    ["<leader>,2"] = { '<cmd>let @+ = expand("%:t")<cr><cmd>echo expand("%:t")<cr>', desc = "Yank filename" },
+    ["<leader>,3"] = { '<cmd>let @+ = expand("%:p")<cr><cmd>echo expand("%:p")<cr>', desc = "Yank full path" },
+    -- ["<leader>,p"] = { name = "Yank path" },
+
     ["<leader>,"] = { name = "Local" },
   },
 
