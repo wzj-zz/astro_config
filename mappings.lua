@@ -28,8 +28,6 @@ return {
         else
           require("telescope.builtin").lsp_document_symbols()
         end
-
-        -- require("telescope.builtin").lsp_document_symbols()
       end,
       desc = "Search symbols",
     },
@@ -96,6 +94,7 @@ return {
     ["<leader>,od"] = { function() require("overseer").debug_parser() end, desc = "Overseer Parser Debug" },
     ["<leader>,o"] = { name = "Overseer" },
 
+    ["<leader>,d"] = { "<cmd>DBUIToggle<cr>", desc = "DBUIToggle" },
     ["<leader>,e"] = { "<cmd>cd %:h<cr><cmd>Neotree focus<cr>", desc = "Sync explorer with current buffer" },
 
     ["<leader>,1"] = { '<cmd>let @+ = expand("%:h")<cr><cmd>echo expand("%:h")<cr>', desc = "Yank directory path" },
