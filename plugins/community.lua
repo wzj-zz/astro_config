@@ -49,6 +49,7 @@ return {
   { import = "astrocommunity.editing-support.rainbow-delimiters-nvim" },
   { import = "astrocommunity.editing-support.multicursors-nvim" },
   { import = "astrocommunity.note-taking.neorg" },
+  { import = "astrocommunity.utility.noice-nvim" },
 
   { import = "astrocommunity.utility.transparent-nvim" },
   {
