@@ -32,11 +32,13 @@ return {
       desc = "Search symbols",
     },
 
-    -- ["<M-j>"] = { "<cmd>normal ]f<cr>", desc = "Next function start" },
     -- ["<S-M-j>"] = { "<cmd>normal ]F<cr>", desc = "Next function end" },
-    -- ["<M-k>"] = { "<cmd>normal [f<cr>", desc = "Previous function start" },
-    ["<M-,>"] = { "<cmd>normal [a<cr>", desc = "Previous argument start" },
-    ["<M-.>"] = { "<cmd>normal ]a<cr>", desc = "Next argument start" },
+    ["<M-j>"] = { "<cmd>normal ]f<cr>", desc = "Next function start" },
+    ["<M-k>"] = { "<cmd>normal [f<cr>", desc = "Previous function start" },
+    ["<M-.>"] = { "<cmd>normal ]A<cr>", desc = "Next argument end" },
+    ["<M-,>"] = { "<cmd>normal [A<cr>", desc = "Previous argument end" },
+    ["<M-;>"] = { "<cmd>normal ]k<cr>", desc = "Next block start" },
+    ["<M-a>"] = { "<cmd>normal [k<cr>", desc = "Previous block start" },
 
     ["<M-w>"] = { function() require("telescope.builtin").buffers() end, desc = "Find buffers" },
     ["<M-n>"] = {
