@@ -41,18 +41,43 @@ return {
   },
 
   { import = "astrocommunity.debugging.nvim-bqf" },
+
   { import = "astrocommunity.motion.mini-surround" },
   { import = "astrocommunity.motion.marks-nvim" },
   { import = "astrocommunity.motion.vim-matchup" },
-  { import = "astrocommunity.utility.telescope-fzy-native-nvim" },
-  { import = "astrocommunity.file-explorer.oil-nvim" },
+
   { import = "astrocommunity.editing-support.rainbow-delimiters-nvim" },
   { import = "astrocommunity.editing-support.multicursors-nvim" },
+
   { import = "astrocommunity.note-taking.neorg" },
+  { import = "astrocommunity.file-explorer.oil-nvim" },
+
   { import = "astrocommunity.utility.noice-nvim" },
+  { import = "astrocommunity.utility.telescope-fzy-native-nvim" },
   { import = "astrocommunity.completion.cmp-cmdline" },
 
   { import = "astrocommunity.color.transparent-nvim" },
+  { import = "astrocommunity.color.tint-nvim" },
+
+  { import = "astrocommunity.color.vim-highlighter" },
+  {
+    "vim-highlighter",
+    keys = function()
+      return {
+        -- These are basing keymaps to guide new users
+        { "f<Enter>", desc = "Highlight" },
+        { "f<BS>", desc = "Remove Highlight" },
+        { "f<C-L>", desc = "Clear Highlight" },
+        { "f<Tab>", desc = "Find Highlight (similar to Telescope grep)" },
+        -- They are derivated from the default keymaps, see README.md to github repo for documentation
+        { "nn", "<cmd>Hi><CR>", desc = "Next Recently Set Highlight" },
+        { "ng", "<cmd>Hi<<CR>", desc = "Previous Recently Set Highlight" },
+        { "n[", "<cmd>Hi{<CR>", desc = "Next Nearest Highlight" },
+        { "n]", "<cmd>Hi}<CR>", desc = "Previous Nearest Highlight" },
+      }
+    end,
+  },
+
   {
     "rcarriga/nvim-notify",
     opts = {
