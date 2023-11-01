@@ -52,9 +52,9 @@ return {
     },
 
     ["<M-h>"] = { "<cmd>tabprevious<cr>", desc = "Previous Tab" },
-    ["<S-M-h>"] = { "<cmd>tabfirst<cr>", desc = "First Tab" },
+    -- ["<S-M-h>"] = { "<cmd>tabfirst<cr>", desc = "First Tab" },
     ["<M-l>"] = { "<cmd>tabnext<cr>", desc = "Next Tab" },
-    ["<S-M-l>"] = { "<cmd>tablast<cr>", desc = "Last Tab" },
+    -- ["<S-M-l>"] = { "<cmd>tablast<cr>", desc = "Last Tab" },
     ["<M-q>"] = {
       function()
         local ok, _ = pcall(vim.cmd.close)
