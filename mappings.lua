@@ -32,7 +32,7 @@ return {
       desc = "Search symbols",
     },
 
-    -- ["<S-M-j>"] = { "<cmd>normal ]F<cr>", desc = "Next function end" },
+    ["<M-g>"] = { "<cmd>normal ]F<cr>", desc = "Next function End" },
     ["<M-j>"] = { "<cmd>normal ]f<cr>", desc = "Next function start" },
     ["<M-k>"] = { "<cmd>normal [f<cr>", desc = "Previous function start" },
     ["<M-.>"] = { "<cmd>normal ]A<cr>", desc = "Next argument end" },
