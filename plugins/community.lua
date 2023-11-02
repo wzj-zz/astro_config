@@ -57,8 +57,6 @@ return {
   { import = "astrocommunity.completion.cmp-cmdline" },
 
   { import = "astrocommunity.color.transparent-nvim" },
-  { import = "astrocommunity.color.tint-nvim" },
-
   { import = "astrocommunity.color.vim-highlighter" },
   {
     "vim-highlighter",
