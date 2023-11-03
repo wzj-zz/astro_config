@@ -55,6 +55,7 @@ return {
   { import = "astrocommunity.utility.noice-nvim" },
   { import = "astrocommunity.utility.telescope-fzy-native-nvim" },
   { import = "astrocommunity.completion.cmp-cmdline" },
+  { import = "astrocommunity.project.project-nvim" },
 
   { import = "astrocommunity.color.transparent-nvim" },
   { import = "astrocommunity.color.vim-highlighter" },
