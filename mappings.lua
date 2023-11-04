@@ -3,22 +3,22 @@ return {
   n = {
     ["<M-d>"] = {
       function() require("telescope.builtin").lsp_definitions() end,
-      desc = "Show the definition of current symbol",
+      desc = "Goto Definition",
     },
-    ["<M-r>"] = { function() require("telescope.builtin").lsp_references() end, desc = "References of current symbol" },
+    ["<M-r>"] = { function() require("telescope.builtin").lsp_references() end, desc = "Goto References" },
     ["<M-y>"] = {
       function() require("telescope.builtin").lsp_type_definitions() end,
-      desc = "Definition of current type",
+      desc = "Goto Type Definition",
     },
     ["<M-i>"] = {
       function() require("telescope.builtin").lsp_implementations() end,
-      desc = "Implementation of current symbol",
+      desc = "Goto Implementation",
     },
-    ["<M-c>"] = { function() require("telescope.builtin").lsp_incoming_calls() end, desc = "Incoming calls" },
+    ["<M-c>"] = { function() require("telescope.builtin").lsp_incoming_calls() end, desc = "Incoming Calls" },
 
     ["<M-s>"] = {
       function() require("aerial").toggle() end,
-      desc = "Symbols outline",
+      desc = "Symbols Outline",
     },
     ["<M-f>"] = {
       function()
@@ -29,26 +29,26 @@ return {
           require("telescope.builtin").lsp_document_symbols()
         end
       end,
-      desc = "Search symbols",
+      desc = "Search Symbols",
     },
 
-    ["<M-g>"] = { "<cmd>normal ]F<cr>", desc = "Next function End" },
-    ["<M-j>"] = { "<cmd>normal ]f<cr>", desc = "Next function start" },
-    ["<M-k>"] = { "<cmd>normal [f<cr>", desc = "Previous function start" },
-    ["<M-.>"] = { "<cmd>normal ]A<cr>", desc = "Next argument end" },
-    ["<M-,>"] = { "<cmd>normal [A<cr>", desc = "Previous argument end" },
-    ["<M-b>"] = { "<cmd>normal [a<cr>", desc = "Previous argument start" },
-    ["<M-;>"] = { "<cmd>normal ]k<cr>", desc = "Next block start" },
-    ["<M-a>"] = { "<cmd>normal [k<cr>", desc = "Previous block start" },
+    ["<M-g>"] = { "<cmd>normal ]F<cr>", desc = "Next Function End" },
+    ["<M-j>"] = { "<cmd>normal ]f<cr>", desc = "Next Function Start" },
+    ["<M-k>"] = { "<cmd>normal [f<cr>", desc = "Previous Function Start" },
+    ["<M-.>"] = { "<cmd>normal ]A<cr>", desc = "Next Argument End" },
+    ["<M-,>"] = { "<cmd>normal [A<cr>", desc = "Previous Argument End" },
+    ["<M-b>"] = { "<cmd>normal [a<cr>", desc = "Previous Argument Start" },
+    ["<M-;>"] = { "<cmd>normal ]k<cr>", desc = "Next Block Start" },
+    ["<M-a>"] = { "<cmd>normal [k<cr>", desc = "Previous Block Start" },
 
-    ["<M-w>"] = { function() require("telescope.builtin").buffers() end, desc = "Find buffers" },
+    ["<M-w>"] = { function() require("telescope.builtin").buffers() end, desc = "Find Buffer" },
     ["<M-n>"] = {
       function() require("astronvim.utils.buffer").nav(vim.v.count > 0 and vim.v.count or 1) end,
-      desc = "Next buffer",
+      desc = "Next Buffer",
     },
     ["<M-p>"] = {
       function() require("astronvim.utils.buffer").nav(-(vim.v.count > 0 and vim.v.count or 1)) end,
-      desc = "Previous buffer",
+      desc = "Previous Buffer",
     },
 
     ["<M-h>"] = { "<cmd>tabprevious<cr>", desc = "Previous Tab" },
@@ -60,7 +60,7 @@ return {
         local ok, _ = pcall(vim.cmd.close)
         if not ok then require("astronvim.utils.buffer").close() end
       end,
-      desc = "Close",
+      desc = "Close Buffer",
     },
 
     ["<leader>br"] = { "<cmd>e!<cr>", desc = "Revert Buffer" },
@@ -81,25 +81,25 @@ return {
 
     ["<leader>uq"] = { function() require("notify").dismiss() end, desc = "Dismiss notify message" },
 
+    ["<leader>,a"] = { "<cmd>InspectTree<cr>", desc = "Show AST" },
     ["<leader>,w"] = { "<cmd>w !cmd.exe /c xt -x<cr>", desc = "xt exec on win" },
     ["<leader>,l"] = { "<cmd>w !wsl.exe xt -x<cr>", desc = "xt exec on wsl" },
     ["<leader>,u1"] = { "<cmd>w !wsl.exe -d ubuntu_1 xt -x<cr>", desc = "xt exec on ubuntu_1" },
     ["<leader>,u2"] = { "<cmd>w !wsl.exe -d ubuntu_2 xt -x<cr>", desc = "xt exec on ubuntu_2" },
     ["<leader>,kl"] = { "<cmd>w !wsl.exe -d kali-linux xt -x<cr>", desc = "xt exec on kali-linux" },
 
-    ["<leader>,s"] = { "<cmd>OverseerToggle<cr>", desc = "Overseer Show task" },
-    ["<leader>,r"] = { "<cmd>OverseerRun<cr>", desc = "Overseer Run task" },
-    ["<leader>,oi"] = { "<cmd>OverseerInfo<cr>", desc = "Overseer info" },
+    ["<leader>,s"] = { "<cmd>OverseerToggle<cr>", desc = "Toggle Overseer" },
+    ["<leader>,r"] = { "<cmd>OverseerRun<cr>", desc = "Overseer Run Task" },
+    ["<leader>,oi"] = { "<cmd>OverseerInfo<cr>", desc = "Overseer Info" },
     ["<leader>,od"] = { function() require("overseer").debug_parser() end, desc = "Overseer Parser Debug" },
     ["<leader>,o"] = { name = "Overseer" },
 
     ["<leader>,d"] = { "<cmd>DBUIToggle<cr>", desc = "DBUIToggle" },
-    ["<leader>,e"] = { "<cmd>cd %:h<cr><cmd>Neotree focus<cr>", desc = "Sync explorer with current buffer" },
 
+    ["<leader>,e"] = { "<cmd>cd %:h<cr><cmd>Neotree focus<cr>", desc = "Sync Neotree With Current Buffer" },
     ["<leader>,1"] = { '<cmd>let @+ = expand("%:h")<cr><cmd>echo expand("%:h")<cr>', desc = "Yank directory path" },
     ["<leader>,2"] = { '<cmd>let @+ = expand("%:t")<cr><cmd>echo expand("%:t")<cr>', desc = "Yank filename" },
     ["<leader>,3"] = { '<cmd>let @+ = expand("%:p")<cr><cmd>echo expand("%:p")<cr>', desc = "Yank full path" },
-    -- ["<leader>,p"] = { name = "Yank path" },
 
     ["<leader>,"] = { name = "Local" },
   },
