@@ -75,9 +75,10 @@ return {
       desc = "Find words in current buffer",
     },
 
-    ["<leader>fj"] = { function() require("telescope.builtin").jumplist() end, desc = "Find jumplist" },
-    ["<leader>fg"] = { function() require("telescope.builtin").filetypes() end, desc = "Select language" },
-    ["<leader>fs"] = { "<cmd>Telescope projects<cr>", desc = "Browse sessions" },
+    ["<leader>fj"] = { function() require("telescope.builtin").jumplist() end, desc = "Find Jumplist" },
+    ["<leader>fl"] = { function() require("telescope.builtin").filetypes() end, desc = "Select Language" },
+    ["<leader>fs"] = { "<cmd>Telescope projects<cr>", desc = "Browse Sessions" },
+    ["<leader>fg"] = { "<cmd>Telescope ast_grep<cr>", desc = "AST Grep" },
 
     ["<leader>uq"] = { function() require("notify").dismiss() end, desc = "Dismiss notify message" },
 

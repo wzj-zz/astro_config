@@ -37,6 +37,12 @@
 <M-h> Previous Tab
 <M-l> Next Tab
 
+## Find
+<leader>fl Find Language
+<leader>fj Find Jumplist
+<leader>fs Browse Sessions
+<leader>fg AST Grep
+
 ## UI
 
 <leader>uw Toggle wrap
