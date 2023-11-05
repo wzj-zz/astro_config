@@ -17,13 +17,22 @@ local ast_grep = {
 }
 
 return {
-  "nvim-telescope/telescope.nvim",
-
-  dependencies = { ast_grep },
-
   {
     "nvim-telescope/telescope.nvim",
-    dependencies = { "Marskey/telescope-sg" },
-    opts = function() require("telescope").load_extension "ast_grep" end,
+    dependencies = { ast_grep },
+    opts = {
+      extensions = {
+        aerial = {
+          show_nesting = {
+            ["_"] = true,
+          },
+        },
+      },
+    },
+    config = function(...)
+      require "plugins.configs.telescope"(...)
+      local telescope = require "telescope"
+      telescope.load_extension "ast_grep"
+    end,
   },
 }
