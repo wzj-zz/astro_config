@@ -24,6 +24,7 @@
 <M-;> Next Block Start
 <M-a> Previous Block Start
 
+<leader>j splitting/joining blocks of code
 <leader>,a Show AST
 
 ## Buffer & Tab & Window
