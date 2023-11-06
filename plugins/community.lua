@@ -46,6 +46,10 @@ return {
   { import = "astrocommunity.motion.marks-nvim" },
   { import = "astrocommunity.motion.vim-matchup" },
 
+  { import = "astrocommunity.indent.indent-tools-nvim" },
+
+  { import = "astrocommunity.git.git-blame-nvim" },
+
   { import = "astrocommunity.editing-support.rainbow-delimiters-nvim" },
   { import = "astrocommunity.editing-support.multicursors-nvim" },
   { import = "astrocommunity.editing-support.treesj" },

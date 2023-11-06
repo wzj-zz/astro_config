@@ -40,6 +40,8 @@ return {
     ["<M-b>"] = { "<cmd>normal [a<cr>", desc = "Previous Argument Start" },
     ["<M-;>"] = { "<cmd>normal ]k<cr>", desc = "Next Block Start" },
     ["<M-a>"] = { "<cmd>normal [k<cr>", desc = "Previous Block Start" },
+    ["<M-[>"] = { "<cmd>normal [i<cr>", desc = "Previous Indent" },
+    ["<M-]>"] = { "<cmd>normal ]i<cr>", desc = "Next Indent" },
 
     ["<M-w>"] = { function() require("telescope.builtin").buffers() end, desc = "Find Buffer" },
     ["<M-n>"] = {
