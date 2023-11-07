@@ -39,6 +39,7 @@
 <M-l> Next Tab
 
 ## Find
+
 <leader>fw live_grep
 <leader>fW live_grep (include hidden files)
 <leader>fe live_grep_args
@@ -112,6 +113,18 @@ Telescope:
 | s           | <c-s>       | search_in_project_files  |
 | r           | <c-r>       | recent_project_files     |
 | w           | <c-w>       | change_working_directory |
+
+## telescope-live-grep-args.nvim 带参数的 live_grep
+
+https://github.com/nvim-telescope/telescope-live-grep-args.nvim
+
+normal:
+<leader>fe live_grep_args
+
+Telescope:
+<C-a> add ""
+<C-f> add -t
+<C-i> add --iglob
 
 ## flash.nvim 光标导航
 

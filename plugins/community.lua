@@ -61,7 +61,6 @@ return {
   { import = "astrocommunity.note-taking.neorg" },
   { import = "astrocommunity.file-explorer.oil-nvim" },
 
-  { import = "astrocommunity.utility.telescope-live-grep-args-nvim" },
   { import = "astrocommunity.utility.noice-nvim" },
   { import = "astrocommunity.utility.telescope-fzy-native-nvim" },
 
