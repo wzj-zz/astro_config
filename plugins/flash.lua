@@ -14,6 +14,9 @@ return {
         search = {
           enabled = true,
         },
+        char = {
+          enabled = false,
+        },
       },
       label = {
         before = true,

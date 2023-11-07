@@ -77,6 +77,7 @@ return {
       desc = "Find words in current buffer",
     },
 
+    ["<leader>fe"] = { ":lua require('telescope').extensions.live_grep_args.live_grep_args()<CR>", desc = "Find Jumplist" },
     ["<leader>fj"] = { function() require("telescope.builtin").jumplist() end, desc = "Find Jumplist" },
     ["<leader>fl"] = { function() require("telescope.builtin").filetypes() end, desc = "Select Language" },
     ["<leader>fs"] = { "<cmd>Telescope projects<cr>", desc = "Browse Sessions" },

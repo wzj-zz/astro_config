@@ -39,10 +39,35 @@
 <M-l> Next Tab
 
 ## Find
-<leader>fl Find Language
-<leader>fj Find Jumplist
-<leader>fs Browse Sessions
+<leader>fw live_grep
+<leader>fW live_grep (include hidden files)
+<leader>fe live_grep_args
+<leader>fc live_grep word at cursor
+
 <leader>fg AST Grep
+
+<leader>ff Find files
+<leader>fF Find files (include hidden files)
+<leader>fo Find history files
+
+<leader>fl Find Language
+<leader>ft Find Colorschemes
+
+<leader>f' Find Marks
+<leader>fr Find Registers
+<leader>fj Find Jumplist
+<leader>fn Find notifications
+<leader>fs Browse Sessions
+
+<leader>fC Find Commands
+<leader>fk Find Keymap
+<leader>fh Find Help Tags
+<leader>fm Find Man Pages
+
+<leader>gt Git Status
+<leader>gb Git Branches
+<leader>gc Git Commits (repository)
+<leader>gC Git Commits (current file)
 
 ## UI
 
