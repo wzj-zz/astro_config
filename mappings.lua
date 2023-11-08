@@ -42,6 +42,7 @@ return {
     ["<M-]>"] = { "<cmd>normal ]i<cr>", desc = "Next Indent" },
     ["<M-u>"] = { "<cmd>normal [%<cr>", desc = "Matchup Outside" },
     ["<M-e>"] = { "<cmd>normal z%<cr>", desc = "Next Matchup Inside" },
+    ["<M-a>"] = { "<cmd>normal %<cr>", desc = "Matchup" },
 
     ["<M-w>"] = { function() require("telescope.builtin").buffers() end, desc = "Find Buffer" },
     ["<M-n>"] = {

@@ -23,6 +23,7 @@
 
 <M-e> Next Matchup Inside
 <M-u> Matchup Outside
+<M-a> Matchup
 
 <leader>j splitting/joining blocks of code
 <leader>,a Show AST
