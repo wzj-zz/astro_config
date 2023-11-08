@@ -21,8 +21,8 @@
 <M-,> Previous Argument End
 <M-b> Previous Argument Start
 
-<M-;> Next Block Start
-<M-a> Previous Block Start
+<M-e> Next Matchup Inside
+<M-u> Matchup Outside
 
 <leader>j splitting/joining blocks of code
 <leader>,a Show AST

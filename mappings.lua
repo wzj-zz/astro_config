@@ -38,10 +38,10 @@ return {
     ["<M-.>"] = { "<cmd>normal ]A<cr>", desc = "Next Argument End" },
     ["<M-,>"] = { "<cmd>normal [A<cr>", desc = "Previous Argument End" },
     ["<M-b>"] = { "<cmd>normal [a<cr>", desc = "Previous Argument Start" },
-    ["<M-;>"] = { "<cmd>normal ]k<cr>", desc = "Next Block Start" },
-    ["<M-a>"] = { "<cmd>normal [k<cr>", desc = "Previous Block Start" },
     ["<M-[>"] = { "<cmd>normal [i<cr>", desc = "Previous Indent" },
     ["<M-]>"] = { "<cmd>normal ]i<cr>", desc = "Next Indent" },
+    ["<M-u>"] = { "<cmd>normal [%<cr>", desc = "Matchup Outside" },
+    ["<M-e>"] = { "<cmd>normal z%<cr>", desc = "Next Matchup Inside" },
 
     ["<M-w>"] = { function() require("telescope.builtin").buffers() end, desc = "Find Buffer" },
     ["<M-n>"] = {

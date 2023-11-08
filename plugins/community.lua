@@ -44,7 +44,6 @@ return {
 
   { import = "astrocommunity.motion.mini-surround" },
   { import = "astrocommunity.motion.marks-nvim" },
-  { import = "astrocommunity.motion.vim-matchup" },
 
   { import = "astrocommunity.indent.indent-tools-nvim" },
 
