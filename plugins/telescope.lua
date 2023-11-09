@@ -1,5 +1,3 @@
-local live_grep_args = { "nvim-telescope/telescope-live-grep-args.nvim" }
-
 local ast_grep = {
   "Marskey/telescope-sg",
   config = function(_, _)
@@ -21,10 +19,16 @@ local ast_grep = {
 return {
   {
     "nvim-telescope/telescope.nvim",
-    dependencies = { live_grep_args, ast_grep },
+
+    dependencies = {
+      "nvim-telescope/telescope-live-grep-args.nvim",
+      "nvim-telescope/telescope-file-browser.nvim",
+      ast_grep,
+    },
 
     opts = function(_, opts)
       local live_grep_args_actions = require "telescope-live-grep-args.actions"
+      local fb_actions = require("telescope").extensions.file_browser.actions
 
       local new_opts = {
         extensions = {
@@ -45,6 +49,17 @@ return {
               },
             },
           },
+
+          file_browser = {
+            mappings = {
+              i = {
+                ["<C-z>"] = fb_actions.toggle_hidden,
+              },
+              n = {
+                z = fb_actions.toggle_hidden,
+              },
+            },
+          },
         },
       }
       return require("astronvim.utils").extend_tbl(opts, new_opts)
@@ -54,6 +69,7 @@ return {
       require "plugins.configs.telescope"(...)
       local telescope = require "telescope"
       telescope.load_extension "live_grep_args"
+      telescope.load_extension "file_browser"
       telescope.load_extension "ast_grep"
     end,
   },
