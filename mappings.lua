@@ -38,6 +38,7 @@ return {
     ["<M-.>"] = { "<cmd>normal ]A<cr>", desc = "Next Argument End" },
     ["<M-,>"] = { "<cmd>normal [A<cr>", desc = "Previous Argument End" },
     ["<M-b>"] = { "<cmd>normal [a<cr>", desc = "Previous Argument Start" },
+    ["<S-M-b>"] = { "<cmd>normal [K<cr>", desc = "Previous Block End" },
     ["<M-[>"] = { "<cmd>normal [i<cr>", desc = "Previous Indent" },
     ["<M-]>"] = { "<cmd>normal ]i<cr>", desc = "Next Indent" },
     ["<M-u>"] = { "<cmd>normal [%<cr>", desc = "Matchup Outside" },

@@ -20,6 +20,7 @@
 <M-.> Next Argument End
 <M-,> Previous Argument End
 <M-b> Previous Argument Start
+<S-M-b> Previous Block End
 
 <M-e> Next Matchup Inside
 <M-u> Matchup Outside
