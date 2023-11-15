@@ -65,8 +65,8 @@ return {
       return require("astronvim.utils").extend_tbl(opts, new_opts)
     end,
 
-    config = function(...)
-      require "plugins.configs.telescope"(...)
+    config = function(plugin, opts)
+      require "plugins.configs.telescope"(plugin, opts)
       local telescope = require "telescope"
       telescope.load_extension "live_grep_args"
       telescope.load_extension "file_browser"
