@@ -82,6 +82,7 @@
 <leader>uq Dismiss notify message
 <leader>uN Toggle Notifications
 <leader>uH Toggle LSP inlay hints (buffer)
+<leader>ux Toggle Twilight (focus on AST)
 
 ## Local
 

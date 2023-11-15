@@ -89,11 +89,7 @@ return {
     ["<leader>uq"] = { function() require("notify").dismiss() end, desc = "Dismiss notify message" },
 
     ["<leader>,a"] = { "<cmd>InspectTree<cr>", desc = "Show AST" },
-    ["<leader>,w"] = { "<cmd>w !cmd.exe /c xt -x<cr>", desc = "xt exec on win" },
-    ["<leader>,l"] = { "<cmd>w !wsl.exe xt -x<cr>", desc = "xt exec on wsl" },
-    ["<leader>,u1"] = { "<cmd>w !wsl.exe -d ubuntu_1 xt -x<cr>", desc = "xt exec on ubuntu_1" },
-    ["<leader>,u2"] = { "<cmd>w !wsl.exe -d ubuntu_2 xt -x<cr>", desc = "xt exec on ubuntu_2" },
-    ["<leader>,kl"] = { "<cmd>w !wsl.exe -d kali-linux xt -x<cr>", desc = "xt exec on kali-linux" },
+    ["<leader>,,"] = { "<cmd>w !xt -x -d<cr>", desc = "xt exec" },
 
     ["<leader>,s"] = { "<cmd>OverseerToggle<cr>", desc = "Toggle Overseer" },
     ["<leader>,r"] = { "<cmd>OverseerRun<cr>", desc = "Overseer Run Task" },
