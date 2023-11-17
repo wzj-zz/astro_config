@@ -79,7 +79,10 @@ return {
       desc = "Find words in current buffer",
     },
 
-    ["<leader>fe"] = { ":lua require('telescope').extensions.live_grep_args.live_grep_args()<CR>", desc = "Find Jumplist" },
+    ["<leader>fe"] = {
+      ":lua require('telescope').extensions.live_grep_args.live_grep_args()<CR>",
+      desc = "Find Jumplist",
+    },
     ["<leader>fb"] = { "<cmd>Telescope file_browser<cr>", desc = "Telescope file_browser" },
     ["<leader>fj"] = { function() require("telescope.builtin").jumplist() end, desc = "Find Jumplist" },
     ["<leader>fl"] = { function() require("telescope.builtin").filetypes() end, desc = "Select Language" },
@@ -89,7 +92,26 @@ return {
     ["<leader>uq"] = { function() require("notify").dismiss() end, desc = "Dismiss notify message" },
 
     ["<leader>,a"] = { "<cmd>InspectTree<cr>", desc = "Show AST" },
-    ["<leader>,,"] = { "<cmd>w !xt -x -d<cr>", desc = "xt exec" },
+    ["<leader>,,"] = {
+      function()
+        local path = vim.fn.getreg "*"
+        if vim.fn.isdirectory(path) == 1 then
+          vim.cmd("cd " .. path)
+          print(vim.cmd "pwd")
+        elseif vim.fn.filereadable(path) == 1 then
+          local parent_path = vim.fn.fnamemodify(path, ":h")
+          vim.cmd("cd " .. parent_path)
+          print(vim.cmd "pwd")
+        else
+          print "Invalid Path !!!"
+        end
+      end,
+      desc = "Set CWD With ClipBoard",
+    },
+    ["<leader>,x"] = {
+      function() require("noice").redirect "w !xt -x -d" end,
+      desc = "xt exec",
+    },
 
     ["<leader>,s"] = { "<cmd>OverseerToggle<cr>", desc = "Toggle Overseer" },
     ["<leader>,r"] = { "<cmd>OverseerRun<cr>", desc = "Overseer Run Task" },
@@ -109,6 +131,16 @@ return {
 
   -- Visual mode
   v = {
+    ["<leader>,x"] = {
+      function()
+        local line_begin = vim.fn.getpos("v")[2]
+        local line_end = vim.fn.getcurpos()[2]
+        require("noice").redirect(line_begin .. "," .. line_end .. " w !xt -x -d")
+      end,
+      desc = "xt exec",
+    },
+    ["<leader>,"] = { name = "Local" },
+
     ["<C-S-Left>"] = { "b", desc = "" },
     ["<C-S-Right>"] = { "e", desc = "" },
     ["<S-Up>"] = { "k", desc = "" },
