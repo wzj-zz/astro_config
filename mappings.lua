@@ -109,9 +109,6 @@ return {
 
   -- Visual mode
   v = {
-    ["<C-j>"] = { "<S-j>", desc = "merge lines" },
-    ["<C-S-j>"] = { "g<S-j>", desc = "merge lines without space" },
-
     ["<C-S-Left>"] = { "b", desc = "" },
     ["<C-S-Right>"] = { "e", desc = "" },
     ["<S-Up>"] = { "k", desc = "" },
