@@ -91,7 +91,6 @@ return {
 
     ["<leader>uq"] = { function() require("notify").dismiss() end, desc = "Dismiss notify message" },
 
-    ["<leader>,a"] = { "<cmd>InspectTree<cr>", desc = "Show AST" },
     ["<leader>,,"] = {
       function()
         local path = vim.fn.getreg "*"
@@ -108,13 +107,37 @@ return {
       end,
       desc = "Set CWD With ClipBoard",
     },
+
     ["<leader>,x"] = {
       function() require("noice").redirect "w !xt -x -d" end,
       desc = "xt exec",
     },
 
-    ["<leader>,s"] = { "<cmd>OverseerToggle<cr>", desc = "Toggle Overseer" },
+    ["<leader>,."] = {
+      function()
+        require("user.utils").new_term_cmd_vertical {
+          cmd = "xs",
+          display_name = "xtools",
+        }
+      end,
+      desc = "xtools Terminal",
+    },
+    ["<leader>,s"] = {
+      function()
+        require("user.utils").new_term_cmd_vertical {
+          cmd = vim.o.shell,
+          display_name = "shell",
+        }
+      end,
+      desc = "Shell Terminal",
+    },
+    ["<leader>,tl"] = { "<cmd>TermSelect<cr>", desc = "xtools Terminal" },
+    ["<leader>,t"] = { name = "Terminal" },
+
+    ["<leader>,a"] = { "<cmd>InspectTree<cr>", desc = "Show AST" },
+
     ["<leader>,r"] = { "<cmd>OverseerRun<cr>", desc = "Overseer Run Task" },
+    ["<leader>,oo"] = { "<cmd>OverseerToggle<cr>", desc = "Toggle Overseer" },
     ["<leader>,oi"] = { "<cmd>OverseerInfo<cr>", desc = "Overseer Info" },
     ["<leader>,od"] = { function() require("overseer").debug_parser() end, desc = "Overseer Parser Debug" },
     ["<leader>,o"] = { name = "Overseer" },
