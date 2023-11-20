@@ -5,6 +5,7 @@ return {
 
   {
     "Civitasv/cmake-tools.nvim",
+    cmd = { "CMakeSelectCwd" },
     opts = function(_, opts)
       local out_path = "out/${variant:buildType}"
       if vim.fn.has "win64" == 1 then out_path = string.gsub(out_path, "/", "\\") end
