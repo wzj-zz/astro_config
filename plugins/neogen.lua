@@ -20,5 +20,6 @@ return {
     { prefix .. "f", function() require("neogen").generate { type = "func" } end, desc = "Function" },
     { prefix .. "t", function() require("neogen").generate { type = "type" } end, desc = "Type" },
     { prefix .. "F", function() require("neogen").generate { type = "file" } end, desc = "File" },
+    { prefix .. "a", "<cmd>Neogen<cr>", desc = "Neogen" },
   },
 }
