@@ -1,3 +1,24 @@
+# TextObject
+
+## general
+
+w/W word
+p paragraph
+s sentence
+t tag
+i indent
+' " ` [] () {} delimiter
+% vim-matchup
+
+## tree-sitter
+
+a parameter
+f function
+k block
+c class
+? conditional
+l loop
+
 # KeyMapping
 
 ## lsp
@@ -129,6 +150,14 @@ Telescope:
 <C-a> add ""
 <C-f> add -t
 <C-i> add --iglob
+
+## nvim-surround 轻松添加/更改/删除周围的分隔符对
+
+https://github.com/kylechui/nvim-surround
+
+ys{motion}{char} add surround
+ds{motion}{char} delete surround
+cs{motion}{char} change surround
 
 ## telescope-file-browser.nvim 文件浏览器
 

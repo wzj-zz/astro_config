@@ -42,7 +42,7 @@ return {
 
   { import = "astrocommunity.debugging.nvim-bqf" },
 
-  { import = "astrocommunity.motion.mini-surround" },
+  { import = "astrocommunity.motion.nvim-surround" },
   { import = "astrocommunity.motion.marks-nvim" },
 
   { import = "astrocommunity.indent.indent-tools-nvim" },
