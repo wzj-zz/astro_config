@@ -67,6 +67,8 @@ return {
       desc = "Close Buffer",
     },
 
+    ["<leader>tl"] = { "<cmd>TermSelect<cr>", desc = "TermSelect" },
+
     ["<leader>br"] = { "<cmd>e!<cr>", desc = "Revert Buffer" },
     ["<leader>b"] = { name = "Buffers" },
 
@@ -131,8 +133,6 @@ return {
       end,
       desc = "Shell Terminal",
     },
-    ["<leader>,tl"] = { "<cmd>TermSelect<cr>", desc = "xtools Terminal" },
-    ["<leader>,t"] = { name = "Terminal" },
 
     ["<leader>,a"] = { "<cmd>InspectTree<cr>", desc = "Show AST" },
 
