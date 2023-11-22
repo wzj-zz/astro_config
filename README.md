@@ -70,6 +70,11 @@ l loop
 
 <leader>fg AST Grep
 
+<leader>fq Find Macros (neoclip)
+<M-;> Find Yanks (neoclip)
+
+<leader>fu Find undos
+
 <leader>ff Find files
 <leader>fF Find files (include hidden files)
 <leader>fo Find history files
@@ -121,11 +126,29 @@ l loop
 
 # Plugin
 
+## telescope-undo.nvim
+
+https://github.com/debugloop/telescope-undo.nvim
+
+<leader>fu Find undos
+
+**Telescope**
+
+- insert mode
+  <cr> yank additions
+  <C-y> yank deletions
+  <C-r> yank restore
+
+- normal mode
+  "y" yank additions
+  "Y" yank deletions
+  "u" yank restore
+
 ## neoclip
 
 https://github.com/AckslD/nvim-neoclip.lua
 
-<M-;> Find Yank (neoclip)
+<M-;> Find Yanks (neoclip)
 <leader>fq Find Macros (neoclip)
 
 **Telescope**:
