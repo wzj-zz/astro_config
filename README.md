@@ -121,6 +121,29 @@ l loop
 
 # Plugin
 
+## neoclip
+
+https://github.com/AckslD/nvim-neoclip.lua
+
+<M-;> Find Yank (neoclip)
+
+**Telescope**:
+
+- insert mode
+  <cr> paste
+  <C-p> paste_behind
+  <C-q> replay
+  <C-d> delete
+  <C-e> edit
+  <C-a> select
+- normal mode
+  {"p", <cr>} paste
+  "P" paste_behind
+  "q" replay
+  "d" delete
+  "e" edit
+  <C-a> select
+
 ## marks.nvim
 
 https://github.com/chentoast/marks.nvim
@@ -210,4 +233,4 @@ https://github.com/nvim-telescope/telescope-file-browser.nvim
 
 https://github.com/folke/flash.nvim
 
-Telescope: M-s
+**Telescope**: M-s
