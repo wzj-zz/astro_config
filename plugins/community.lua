@@ -51,12 +51,7 @@ return {
 
   { import = "astrocommunity.editing-support.rainbow-delimiters-nvim" },
   { import = "astrocommunity.editing-support.multicursors-nvim" },
-  { import = "astrocommunity.editing-support.treesj" },
   { import = "astrocommunity.editing-support.telescope-undo-nvim" },
-  {
-    "Wansmer/treesj",
-    keys = { { "<leader>j", "<CMD>TSJToggle<CR>", desc = "Toggle Treesitter Join" } },
-  },
 
   { import = "astrocommunity.note-taking.neorg" },
   { import = "astrocommunity.file-explorer.oil-nvim" },

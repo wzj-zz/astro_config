@@ -93,6 +93,8 @@ return {
 
     ["<leader>uq"] = { function() require("notify").dismiss() end, desc = "Dismiss notify message" },
 
+    ["<leader>a"] = { name = "Action / Annotation" },
+
     ["<leader>,,"] = {
       function()
         local path = vim.fn.getreg "*"
@@ -112,7 +114,7 @@ return {
 
     ["<leader>,x"] = {
       function() require("noice").redirect "w !xt -x -d" end,
-      desc = "xt exec",
+      desc = "xtools exec",
     },
 
     ["<leader>,."] = {
@@ -122,7 +124,7 @@ return {
           display_name = "xtools",
         }
       end,
-      desc = "xtools Terminal",
+      desc = "ToggleTerm xtools (python)",
     },
     ["<leader>,s"] = {
       function()
@@ -131,7 +133,7 @@ return {
           display_name = "shell",
         }
       end,
-      desc = "Shell Terminal",
+      desc = "ToggleTerm shell",
     },
 
     ["<leader>,a"] = { "<cmd>InspectTree<cr>", desc = "Show AST" },

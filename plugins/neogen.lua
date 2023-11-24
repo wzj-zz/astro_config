@@ -1,7 +1,4 @@
 local prefix = "<leader>a"
-local maps = { n = {} }
-maps.n[prefix] = { desc = "Annotation" }
-require("astronvim.utils").set_mappings(maps)
 
 return {
   "danymat/neogen",

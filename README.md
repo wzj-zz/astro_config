@@ -119,8 +119,12 @@ l loop
 
 <leader>,d Toggle Debug UI
 
-<leader>,s Toggle Overseer
+<leader>,s ToggleTerm shell
+<leader>,. ToggleTerm xtools (python)
+<leader>,x xtools exec (python)
+
 <leader>,r Overseer Run Task
+<leader>,oo Toggle Overseer
 <leader>,oi Overseer Info
 <leader>,od Overseer Parser Debug
 
