@@ -12,11 +12,10 @@ return {
     },
   },
   keys = {
-    { prefix .. "<cr>", function() require("neogen").generate { type = "current" } end, desc = "Current" },
-    { prefix .. "c", function() require("neogen").generate { type = "class" } end, desc = "Class" },
-    { prefix .. "f", function() require("neogen").generate { type = "func" } end, desc = "Function" },
-    { prefix .. "t", function() require("neogen").generate { type = "type" } end, desc = "Type" },
-    { prefix .. "F", function() require("neogen").generate { type = "file" } end, desc = "File" },
-    { prefix .. "a", "<cmd>Neogen<cr>", desc = "Neogen" },
+    { prefix .. "a", "<cmd>Neogen<cr>", desc = "Annotation Auto" },
+    { prefix .. "c", function() require("neogen").generate { type = "class" } end, desc = "Annotation Class" },
+    { prefix .. "f", function() require("neogen").generate { type = "func" } end, desc = "Annotation Function" },
+    { prefix .. "t", function() require("neogen").generate { type = "type" } end, desc = "Annotation Type" },
+    { prefix .. "F", function() require("neogen").generate { type = "file" } end, desc = "Annotation File" },
   },
 }

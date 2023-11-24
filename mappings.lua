@@ -32,18 +32,23 @@ return {
       desc = "Search Symbols",
     },
 
-    ["<M-g>"] = { "<cmd>normal ]F<cr>", desc = "Next Function End" },
     ["<M-j>"] = { "<cmd>normal ]f<cr>", desc = "Next Function Start" },
     ["<M-k>"] = { "<cmd>normal [f<cr>", desc = "Previous Function Start" },
-    ["<M-.>"] = { "<cmd>normal ]A<cr>", desc = "Next Argument End" },
+    ["<M-g>"] = { "<cmd>normal ]F<cr>", desc = "Next Function End" },
+
     ["<M-,>"] = { "<cmd>normal [A<cr>", desc = "Previous Argument End" },
+    ["<M-.>"] = { "<cmd>normal ]A<cr>", desc = "Next Argument End" },
     ["<M-b>"] = { "<cmd>normal [a<cr>", desc = "Previous Argument Start" },
     ["<S-M-b>"] = { "<cmd>normal [K<cr>", desc = "Previous Block End" },
-    ["<M-[>"] = { "<cmd>normal [i<cr>", desc = "Previous Indent" },
-    ["<M-]>"] = { "<cmd>normal ]i<cr>", desc = "Next Indent" },
-    ["<M-u>"] = { "<cmd>normal [%<cr>", desc = "Matchup Outside" },
+
     ["<M-e>"] = { "<cmd>normal z%<cr>", desc = "Next Matchup Inside" },
+    ["<M-u>"] = { "<cmd>normal [%<cr>", desc = "Matchup Outside" },
     ["<M-a>"] = { "<cmd>normal %<cr>", desc = "Matchup" },
+
+    ["<M-[>"] = { "<cmd>normal [u<cr>", desc = "Previous Indent" },
+    ["<M-]>"] = { "<cmd>normal ]u<cr>", desc = "Next Indent" },
+    ["<S-M-u>"] = { "<cmd>normal [i<cr>", desc = "Indent Top" },
+    ["<S-M-i>"] = { "<cmd>normal ]i<cr>", desc = "Indent Bottom" },
 
     ["<M-w>"] = { function() require("telescope.builtin").buffers() end, desc = "Find Buffer" },
     ["<M-n>"] = {

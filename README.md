@@ -21,6 +21,26 @@ l loop
 
 # KeyMapping
 
+## Motion
+
+<M-j> Next Function Start
+<M-k> Previous Function Start
+<M-g> Next Function End
+
+<M-,> Previous Argument End
+<M-.> Next Argument End
+<M-b> Previous Argument Start
+<S-M-b> Previous Block End
+
+<M-e> Next Matchup Inside
+<M-u> Matchup Outside
+<M-a> Matchup
+
+<M-[> Previous Indent
+<M-]> Next Indent
+<S-M-u> Indent Top
+<S-M-i> Indent Bottom
+
 ## lsp
 
 <M-s> Symbols Outline -> aerial.nvim
@@ -32,23 +52,31 @@ l loop
 <M-i> Goto Implementation
 <M-c> Incoming Calls
 
-## tree-sitter
+<leader>lf Format Buffer
 
-<M-j> Next Function Start
-<M-k> Previous Function Start
-<M-g> Next Function End
+## Git
 
-<M-.> Next Argument End
-<M-,> Previous Argument End
-<M-b> Previous Argument Start
-<S-M-b> Previous Block End
+## Annotation
 
-<M-e> Next Matchup Inside
-<M-u> Matchup Outside
-<M-a> Matchup
+- normal mode
+  <leader>aa Annotation Auto
+  <leader>ac Annotation Class
+  <leader>af Annotation Function
+  <leader>at Annotation Type
+  <leader>aF Annotation File
 
-<leader>j splitting/joining blocks of code
-<leader>,a Show AST
+## Action
+
+- normal mode
+  <leader>ah Move line left
+  <leader>aj Move line down
+  <leader>ak Move line up
+  <leader>al Move line right
+- visual mode
+  <leader>ah Move selection left
+  <leader>aj Move selection down
+  <leader>ak Move selection up
+  <leader>al Move selection right
 
 ## Buffer & Tab & Window
 
@@ -117,6 +145,7 @@ l loop
 <leader>,3 Yank full path
 <leader>,e Sync Neotree With Current Buffer
 
+<leader>,a Show AST
 <leader>,d Toggle Debug UI
 
 <leader>,s ToggleTerm shell
