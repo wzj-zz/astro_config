@@ -23,23 +23,24 @@ l loop
 
 ## Motion
 
-<M-j> Next Function Start
-<M-k> Previous Function Start
-<M-g> Next Function End
+- normal mode
+  <M-j> Next Function Start
+  <M-k> Previous Function Start
+  <M-g> Next Function End
 
-<M-,> Previous Argument End
-<M-.> Next Argument End
-<M-b> Previous Argument Start
-<S-M-b> Previous Block End
+  <M-,> Previous Argument End
+  <M-.> Next Argument End
+  <M-b> Previous Argument Start
+  <S-M-b> Previous Block End
 
-<M-e> Next Matchup Inside
-<M-u> Matchup Outside
-<M-a> Matchup
+  <M-e> Next Matchup Inside
+  <M-u> Matchup Outside
+  <M-a> Matchup
 
-<M-[> Previous Indent
-<M-]> Next Indent
-<S-M-u> Indent Top
-<S-M-i> Indent Bottom
+  <M-[> Previous Indent
+  <M-]> Next Indent
+  <S-M-u> Indent Top
+  <S-M-i> Indent Bottom
 
 ## lsp
 
@@ -53,8 +54,17 @@ l loop
 <M-c> Incoming Calls
 
 <leader>lf Format Buffer
+<leader>lr Rename current symbol
+<leader>lg Search workspace symbols
+<leader>lx Search diagnostics
+<leader>li LSP information
 
 ## Git
+
+<leader>gg Open Neogit Tab Page
+<leader>go Open Neogit Override CWD
+<leader>gx Open Neogit In xtools (only win64)
+<leader>gf Open Neogit In astro_config
 
 ## Annotation
 
@@ -90,6 +100,8 @@ l loop
 <M-l> Next Tab
 
 ## Find
+
+<leader>ss Find words in current buffer
 
 <leader>fw live_grep
 <leader>fW live_grep (include hidden files)

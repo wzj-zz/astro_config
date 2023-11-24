@@ -86,6 +86,27 @@ return {
       desc = "Find words in current buffer",
     },
 
+    ["<leader>lg"] = {
+      function()
+        vim.ui.input({ prompt = "Symbol Query: (leave empty for word under cursor)" }, function(query)
+          if query then
+            -- word under cursor if given query is empty
+            if query == "" then query = vim.fn.expand "<cword>" end
+            require("telescope.builtin").lsp_workspace_symbols {
+              query = query,
+              prompt_title = ("Find word (%s)"):format(query),
+            }
+          end
+        end)
+      end,
+      desc = "Search workspace symbols",
+    },
+
+    ["<leader>lx"] = {
+      function() require("telescope.builtin").diagnostics() end,
+      desc = "Search diagnostics",
+    },
+
     ["<leader>fe"] = {
       ":lua require('telescope').extensions.live_grep_args.live_grep_args()<CR>",
       desc = "Find Jumplist",
