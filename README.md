@@ -24,8 +24,8 @@ l loop
 ## Motion
 
 - normal mode
-  <M-j> Next Function Start
-  <M-k> Previous Function Start
+  <S-M-u> Previous Function Start
+  <S-M-i> Next Function Start
   <M-g> Next Function End
 
   <M-,> Previous Argument End
@@ -37,10 +37,10 @@ l loop
   <M-u> Matchup Outside
   <M-a> Matchup
 
-  <M-[> Previous Indent
-  <M-]> Next Indent
-  <S-M-u> Indent Top
-  <S-M-i> Indent Bottom
+  <M-k> Previous Indent
+  <M-j> Next Indent
+  <M-[> Indent Top
+  <M-]> Indent Bottom
 
 ## lsp
 
