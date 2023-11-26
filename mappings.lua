@@ -138,6 +138,8 @@ return {
       desc = "Set CWD With ClipBoard",
     },
 
+    ["<leader>,p"] = { "<cmd>ProjectRoot<cr>", desc = "Set Project Root" },
+
     ["<leader>,x"] = {
       function() require("noice").redirect "w !xt -x -d" end,
       desc = "xtools exec",

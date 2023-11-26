@@ -240,6 +240,7 @@ https://github.com/ahmedkhalf/project.nvim
 
 normal:
 <leader>fs -> Browse sessions
+<leader>,p -> Set Project Root
 
 Telescope:
 
