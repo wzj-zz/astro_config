@@ -61,15 +61,10 @@ return {
     },
 
     ["<M-h>"] = { "<cmd>tabprevious<cr>", desc = "Previous Tab" },
-    -- ["<S-M-h>"] = { "<cmd>tabfirst<cr>", desc = "First Tab" },
     ["<M-l>"] = { "<cmd>tabnext<cr>", desc = "Next Tab" },
-    -- ["<S-M-l>"] = { "<cmd>tablast<cr>", desc = "Last Tab" },
     ["<M-q>"] = {
-      function()
-        local ok, _ = pcall(vim.cmd.close)
-        if not ok then require("astronvim.utils.buffer").close() end
-      end,
-      desc = "Close Buffer",
+      function() require("astronvim.utils.buffer").close() end,
+      desc = "Close buffer",
     },
 
     ["<leader>tl"] = { "<cmd>TermSelect<cr>", desc = "TermSelect" },
@@ -228,5 +223,9 @@ return {
   -- Terminal mode
   t = {
     ["<C-l>"] = false,
+    ["<M-q>"] = {
+      "<cmd>close<cr>",
+      desc = "Close buffer",
+    },
   },
 }
