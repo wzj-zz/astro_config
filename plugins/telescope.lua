@@ -16,12 +16,25 @@ local ast_grep = {
   end,
 }
 
+local lua_snip = {
+  "benfowler/telescope-luasnip.nvim",
+  keys = {
+    {
+      "<M-o>",
+      "<cmd>lua require 'telescope'.extensions.luasnip.luasnip()<cr>",
+      mode = { "n", "i" },
+      desc = "Telescope luasnip",
+    },
+  },
+}
+
 return {
   {
     "nvim-telescope/telescope.nvim",
 
     dependencies = {
       ast_grep,
+      lua_snip,
       "nvim-telescope/telescope-live-grep-args.nvim",
       "nvim-telescope/telescope-file-browser.nvim",
       "jvgrootveld/telescope-zoxide",
@@ -72,6 +85,7 @@ return {
       telescope.load_extension "file_browser"
       telescope.load_extension "ast_grep"
       telescope.load_extension "zoxide"
+      telescope.load_extension "luasnip"
     end,
   },
 }

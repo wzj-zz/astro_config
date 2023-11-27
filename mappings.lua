@@ -103,7 +103,7 @@ return {
     },
 
     ["<leader>fe"] = {
-      "<cmd>lua require('telescope').extensions.live_grep_args.live_grep_args()<CR>",
+      "<cmd>lua require('telescope').extensions.live_grep_args.live_grep_args()<cr>",
       desc = "Find Jumplist",
     },
     ["<leader>fb"] = { "<cmd>Telescope file_browser<cr>", desc = "Telescope file_browser" },

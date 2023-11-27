@@ -101,6 +101,8 @@ l loop
 
 ## Find
 
+`<M-o> Telescope luasnip`
+
 `<leader>ss Find words in current buffer`
 
 `<leader>fw live_grep`
