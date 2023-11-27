@@ -167,10 +167,14 @@ l loop
 `<leader>,. ToggleTerm xtools (python)`
 `<leader>,x xtools exec (python)`
 
-`<leader>,r Overseer Run Task`
+`<leader>,r  Overseer Run Task`
 `<leader>,oo Toggle Overseer`
 `<leader>,oi Overseer Info`
 `<leader>,od Overseer Parser Debug`
+
+`<leader>,hh Switch to hex view`
+`<leader>,hr Switch to binary view`
+`<leader>,ho Open binary file`
 
 # Plugin
 

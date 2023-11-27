@@ -175,6 +175,11 @@ return {
     ["<leader>,2"] = { '<cmd>let @+ = expand("%:t")<cr><cmd>echo expand("%:t")<cr>', desc = "Yank filename" },
     ["<leader>,3"] = { '<cmd>let @+ = expand("%:p")<cr><cmd>echo expand("%:p")<cr>', desc = "Yank full path" },
 
+    ["<leader>,hh"] = { "<cmd>%!xxd -g 1<cr>", desc = "Switch to hex view" },
+    ["<leader>,hr"] = { "<cmd>%!xxd -r<cr>", desc = "Switch to binary view" },
+    ["<leader>,ho"] = { ":e ++binary ", desc = "Open binary file" },
+    ["<leader>,h"] = { name = "Hex" },
+
     ["<leader>,"] = { name = "Local" },
   },
 
