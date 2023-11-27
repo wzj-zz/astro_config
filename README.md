@@ -251,7 +251,7 @@ normal:
 Telescope:
 `<C-f> find_file`
 `<C-b> find_file (all file)`
-`<cr> Change cwd to selection / Open file to selection`
+`{<cr>, <C-t>} Change cwd to selection / Open file to selection`
 
 ## project.nvim 项目管理
 

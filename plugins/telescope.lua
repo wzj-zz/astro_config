@@ -1,3 +1,24 @@
+local project_nvim = {
+  "jay-babu/project.nvim",
+  main = "project_nvim",
+  event = "VeryLazy",
+  opts = {
+    manual_mode = true,
+    silent_chdir = false,
+    detection_methods = { "pattern" },
+    ignore_lsp = { "lua_ls" },
+    patterns = {
+      ".git",
+      "_darcs",
+      ".hg",
+      ".bzr",
+      ".svn",
+      "Makefile",
+      "package.json",
+    },
+  },
+}
+
 local ast_grep = {
   "Marskey/telescope-sg",
   config = function(_, _)
@@ -35,6 +56,7 @@ return {
     dependencies = {
       ast_grep,
       lua_snip,
+      project_nvim,
       "nvim-telescope/telescope-live-grep-args.nvim",
       "nvim-telescope/telescope-file-browser.nvim",
       "jvgrootveld/telescope-zoxide",
@@ -86,6 +108,7 @@ return {
       telescope.load_extension "ast_grep"
       telescope.load_extension "zoxide"
       telescope.load_extension "luasnip"
+      telescope.load_extension "projects"
     end,
   },
 }
