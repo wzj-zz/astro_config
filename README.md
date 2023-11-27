@@ -24,150 +24,151 @@ l loop
 ## Motion
 
 - normal mode
-  <S-M-u> Previous Function Start
-  <S-M-i> Next Function Start
-  <M-g> Next Function End
+  `<S-M-u> Previous Function Start`
+  `<S-M-i> Next Function Start`
+  `<M-g> Next Function End`
 
-  <M-,> Previous Argument End
-  <M-.> Next Argument End
-  <M-b> Previous Argument Start
-  <S-M-b> Previous Block End
+  `<M-,> Previous Argument End`
+  `<M-.> Next Argument End`
+  `<M-b> Previous Argument Start`
+  `<S-M-b> Previous Block End`
 
-  <M-e> Next Matchup Inside
-  <M-u> Matchup Outside
-  <M-a> Matchup
+  `<M-e> Next Matchup Inside`
+  `<M-u> Matchup Outside`
+  `<M-a> Matchup`
 
-  <M-k> Previous Indent
-  <M-j> Next Indent
-  <M-[> Indent Top
-  <M-]> Indent Bottom
+  `<M-k> Previous Indent`
+  `<M-j> Next Indent`
+  `<M-[> Indent Top`
+  `<M-]> Indent Bottom`
 
 ## lsp
 
-<M-s> Symbols Outline -> aerial.nvim
-<M-f> Search Symbols
+`<M-s> Symbols Outline -> aerial.nvim`
+`<M-f> Search Symbols`
 
-<M-d> Goto Definition
-<M-r> Goto References
-<M-y> Goto Type Definition
-<M-i> Goto Implementation
-<M-c> Incoming Calls
+`<M-d> Goto Definition`
+`<M-r> Goto References`
+`<M-y> Goto Type Definition`
+`<M-i> Goto Implementation`
+`<M-c> Incoming Calls`
 
-<leader>lf Format Buffer
-<leader>lr Rename current symbol
-<leader>lg Search workspace symbols
-<leader>lx Search diagnostics
-<leader>li LSP information
+`<leader>lf Format Buffer`
+`<leader>lr Rename current symbol`
+`<leader>lg Search workspace symbols`
+`<leader>lx Search diagnostics`
+`<leader>li LSP information`
 
 ## Git
 
-<leader>gg Open Neogit Tab Page
-<leader>go Open Neogit Override CWD
-<leader>gx Open Neogit In xtools (only win64)
-<leader>gf Open Neogit In astro_config
+`<leader>gg Open Neogit Tab Page`
+`<leader>go Open Neogit Override CWD`
+`<leader>gx Open Neogit In xtools (only win64)`
+`<leader>gf Open Neogit In astro_config`
 
 ## Annotation
 
 - normal mode
-  <leader>aa Annotation Auto
-  <leader>ac Annotation Class
-  <leader>af Annotation Function
-  <leader>at Annotation Type
-  <leader>aF Annotation File
+  `<leader>aa Annotation Auto`
+  `<leader>ac Annotation Class`
+  `<leader>af Annotation Function`
+  `<leader>at Annotation Type`
+  `<leader>aF Annotation File`
 
 ## Action
 
 - normal mode
-  <leader>ah Move line left
-  <leader>aj Move line down
-  <leader>ak Move line up
-  <leader>al Move line right
+  `<leader>ah Move line left`
+  `<leader>aj Move line down`
+  `<leader>ak Move line up`
+  `<leader>al Move line right`
 - visual mode
-  <leader>ah Move selection left
-  <leader>aj Move selection down
-  <leader>ak Move selection up
-  <leader>al Move selection right
+  `<leader>ah Move selection left`
+  `<leader>aj Move selection down`
+  `<leader>ak Move selection up`
+  `<leader>al Move selection right`
 
 ## Buffer & Tab & Window
 
-<M-w> Find Buffer
-<M-n> Next Buffer
-<M-p> Previous Buffer
-<M-q> Close Buffer
-<leader>br Revert Buffer
+`<M-w> Find Buffer`
+`<M-n> Next Buffer`
+`<M-p> Previous Buffer`
+`<M-q> Close Buffer`
+`<leader>br Revert Buffer`
 
-<M-h> Previous Tab
-<M-l> Next Tab
+`<M-h> Previous Tab`
+`<M-l> Next Tab`
 
 ## Find
 
-<leader>ss Find words in current buffer
+`<leader>ss Find words in current buffer`
 
-<leader>fw live_grep
-<leader>fW live_grep (include hidden files)
-<leader>fe live_grep_args
-<leader>fc live_grep word at cursor
+`<leader>fw live_grep`
+`<leader>fW live_grep (include hidden files)`
+`<leader>fe live_grep_args`
+`<leader>fc live_grep word at cursor`
 
-<leader>fg AST Grep
+`<leader>fg AST Grep`
 
-<leader>fq Find Macros (neoclip)
-<M-;> Find Yanks (neoclip)
+`<leader>fq Find Macros (neoclip)`
+`<M-;> Find Yanks (neoclip)`
 
-<leader>fu Find undos
+`<leader>fu Find undos`
 
-<leader>ff Find files
-<leader>fF Find files (include hidden files)
-<leader>fo Find history files
-<leader>fb Telescope file_browser
+`<leader>ff Find files`
+`<leader>fF Find files (include hidden files)`
+`<leader>fo Find history files`
+`<leader>fb Telescope file_browser`
+`<leader>fz Telescope zoxide`
 
-<leader>fl Find Language
-<leader>ft Find Colorschemes
+`<leader>fl Find Language`
+`<leader>ft Find Colorschemes`
 
-<leader>f' Find Marks
-<leader>fr Find Registers
-<leader>fj Find Jumplist
-<leader>fn Find notifications
-<leader>fs Browse Sessions
+`<leader>f' Find Marks`
+`<leader>fr Find Registers`
+`<leader>fj Find Jumplist`
+`<leader>fn Find notifications`
+`<leader>fs Browse Sessions`
 
-<leader>fC Find Commands
-<leader>fk Find Keymap
-<leader>fh Find Help Tags
-<leader>fm Find Man Pages
+`<leader>fC Find Commands`
+`<leader>fk Find Keymap`
+`<leader>fh Find Help Tags`
+`<leader>fm Find Man Pages`
 
-<leader>gt Git Status
-<leader>gb Git Branches
-<leader>gc Git Commits (repository)
-<leader>gC Git Commits (current file)
+`<leader>gt Git Status`
+`<leader>gb Git Branches`
+`<leader>gc Git Commits (repository)`
+`<leader>gC Git Commits (current file)`
 
 ## UI
 
-<leader>uw Toggle wrap
-<leader>un Change line numbering
-<leader>ui Change indent settings (set indent value)
-<leader>uT Toggle transparency
-<leader>uq Dismiss notify message
-<leader>uN Toggle Notifications
-<leader>uH Toggle LSP inlay hints (buffer)
-<leader>ux Toggle Twilight (focus on AST)
+`<leader>uw Toggle wrap`
+`<leader>un Change line numbering`
+`<leader>ui Change indent settings (set indent value)`
+`<leader>uT Toggle transparency`
+`<leader>uq Dismiss notify message`
+`<leader>uN Toggle Notifications`
+`<leader>uH Toggle LSP inlay hints (buffer)`
+`<leader>ux Toggle Twilight (focus on AST)`
 
 ## Local
 
-<leader>,1 Yank directory path
-<leader>,2 Yank filename
-<leader>,3 Yank full path
-<leader>,e Sync Neotree With Current Buffer
+`<leader>,1 Yank directory path`
+`<leader>,2 Yank filename`
+`<leader>,3 Yank full path`
+`<leader>,e Sync Neotree With Current Buffer`
 
-<leader>,a Show AST
-<leader>,d Toggle Debug UI
+`<leader>,a Show AST`
+`<leader>,d Toggle Debug UI`
 
-<leader>,s ToggleTerm shell
-<leader>,. ToggleTerm xtools (python)
-<leader>,x xtools exec (python)
+`<leader>,s ToggleTerm shell`
+`<leader>,. ToggleTerm xtools (python)`
+`<leader>,x xtools exec (python)`
 
-<leader>,r Overseer Run Task
-<leader>,oo Toggle Overseer
-<leader>,oi Overseer Info
-<leader>,od Overseer Parser Debug
+`<leader>,r Overseer Run Task`
+`<leader>,oo Toggle Overseer`
+`<leader>,oi Overseer Info`
+`<leader>,od Overseer Parser Debug`
 
 # Plugin
 
@@ -175,43 +176,43 @@ l loop
 
 https://github.com/debugloop/telescope-undo.nvim
 
-<leader>fu Find undos
+`<leader>fu Find undos`
 
 **Telescope**
 
 - insert mode
-  <cr> yank additions
-  <C-y> yank deletions
-  <C-r> yank restore
+  `<cr> yank additions`
+  `<C-y> yank deletions`
+  `<C-r> yank restore`
 
 - normal mode
-  "y" yank additions
-  "Y" yank deletions
-  "u" yank restore
+  `"y" yank additions`
+  `"Y" yank deletions`
+  `"u" yank restore`
 
 ## neoclip
 
 https://github.com/AckslD/nvim-neoclip.lua
 
-<M-;> Find Yanks (neoclip)
-<leader>fq Find Macros (neoclip)
+`<M-;> Find Yanks (neoclip)`
+`<leader>fq Find Macros (neoclip)`
 
 **Telescope**:
 
 - insert mode
-  <cr> paste
-  {<C-p>, <M-p>} paste_behind
-  <C-q> replay
-  <C-d> delete
-  <C-e> edit
-  <C-a> select
+  `<cr> paste`
+  `{<C-p>, <M-p>} paste_behind`
+  `<C-q> replay`
+  `<C-d> delete`
+  `<C-e> edit`
+  `<C-a> select`
 - normal mode
-  {"p", <cr>} paste
-  "P" paste_behind
-  "q" replay
-  "d" delete
-  "e" edit
-  <C-a> select
+  `{"p", <cr>} paste`
+  `"P" paste_behind`
+  `"q" replay`
+  `"d" delete`
+  `"e" edit`
+  `<C-a> select`
 
 ## marks.nvim
 
@@ -234,13 +235,25 @@ https://github.com/chentoast/marks.nvim
 | m{          | Move to the previous bookmark having the same type as the bookmark under the cursor. Works across buffers. |
 | dm=         | Delete the bookmark under the cursor.                                                                      |
 
+## telescope-zoxide
+
+https://github.com/jvgrootveld/telescope-zoxide
+
+normal:
+`<leader>fz -> Telescope zoxide`
+
+Telescope:
+`<C-f> find_file`
+`<C-b> find_file (all file)`
+`<cr> Change cwd to selection / Open file to selection`
+
 ## project.nvim 项目管理
 
 https://github.com/ahmedkhalf/project.nvim
 
 normal:
-<leader>fs -> Browse sessions
-<leader>,p -> Set Project Root
+`<leader>fs -> Browse sessions`
+`<leader>,p -> Set Project Root`
 
 Telescope:
 
@@ -258,20 +271,20 @@ Telescope:
 https://github.com/nvim-telescope/telescope-live-grep-args.nvim
 
 normal:
-<leader>fe live_grep_args
+`<leader>fe live_grep_args`
 
 Telescope:
-<C-a> add ""
-<C-f> add -t
-<C-i> add --iglob
+`<C-a> add ""`
+`<C-f> add -t`
+`<C-i> add --iglob`
 
 ## nvim-surround 轻松添加/更改/删除周围的分隔符对
 
 https://github.com/kylechui/nvim-surround
 
-ys{motion}{char} add surround
-ds{motion}{char} delete surround
-cs{motion}{char} change surround
+`ys{motion}{char} add surround`
+`ds{motion}{char} delete surround`
+`cs{motion}{char} change surround`
 
 ## telescope-file-browser.nvim 文件浏览器
 

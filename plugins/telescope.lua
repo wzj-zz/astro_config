@@ -21,14 +21,14 @@ return {
     "nvim-telescope/telescope.nvim",
 
     dependencies = {
+      ast_grep,
       "nvim-telescope/telescope-live-grep-args.nvim",
       "nvim-telescope/telescope-file-browser.nvim",
-      ast_grep,
+      "jvgrootveld/telescope-zoxide",
     },
 
     opts = function(_, opts)
       local live_grep_args_actions = require "telescope-live-grep-args.actions"
-      local fb_actions = require("telescope").extensions.file_browser.actions
 
       local new_opts = {
         extensions = {
@@ -50,13 +50,13 @@ return {
             },
           },
 
-          file_browser = {
+          zoxide = {
             mappings = {
-              i = {
-                ["<C-z>"] = fb_actions.toggle_hidden,
-              },
-              n = {
-                z = fb_actions.toggle_hidden,
+              ["<C-b>"] = {
+                keepinsert = true,
+                action = function(selection)
+                  require("telescope.builtin").find_files { cwd = selection.path, hidden = true, no_ignore = true }
+                end,
               },
             },
           },
@@ -71,6 +71,7 @@ return {
       telescope.load_extension "live_grep_args"
       telescope.load_extension "file_browser"
       telescope.load_extension "ast_grep"
+      telescope.load_extension "zoxide"
     end,
   },
 }
