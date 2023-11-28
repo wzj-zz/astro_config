@@ -178,6 +178,18 @@ l loop
 
 # Plugin
 
+## vim-highlighter
+
+https://github.com/azabiong/vim-highlighter
+
+- normal mode
+  `f<Enter> Highlight`
+  `f<BS> Remove Highlight`
+  `f<C-l> Clear Highlight`
+  `f<C-s> Save Highlight`
+  `f<C-h> Load Highlight`
+  `f<Tab> Find Highlight (similar to Telescope grep)`
+
 ## telescope-undo.nvim
 
 https://github.com/debugloop/telescope-undo.nvim

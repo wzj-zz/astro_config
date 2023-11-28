@@ -7,6 +7,10 @@ function M.isdir(path) return vim.fn.isdirectory(path) == 1 end
 
 function M.isfile(path) return vim.fn.filereadable(path) == 1 end
 
+function M.cwd() return vim.fn.getcwd() end
+
+function M.cd(path) vim.fn.chdir(path) end
+
 function M.get_buf_file_path()
   local buffer_number = vim.api.nvim_get_current_buf()
   local buffer_name = vim.api.nvim_buf_get_name(buffer_number)
