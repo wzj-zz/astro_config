@@ -1,3 +1,5 @@
+local user_utils = require "user.utils"
+
 return {
   -- Normal mode
   n = {
@@ -119,13 +121,15 @@ return {
 
     ["<leader>,,"] = {
       function()
+        user_utils.adjust_path_from_clip()
         local path = vim.fn.getreg "*"
-        if vim.fn.isdirectory(path) == 1 then
+        if user_utils.isdir(path) then
           vim.cmd("cd " .. path)
           print(vim.cmd "pwd")
-        elseif vim.fn.filereadable(path) == 1 then
-          local parent_path = vim.fn.fnamemodify(path, ":h")
+        elseif user_utils.isfile(path) then
+          local parent_path = user_utils.get_buf_file_dir()
           vim.cmd("cd " .. parent_path)
+          vim.cmd("e " .. path)
           print(vim.cmd "pwd")
         else
           print "Invalid Path !!!"
