@@ -145,6 +145,7 @@ l loop
 ## UI
 
 `<leader>uw Toggle wrap`
+`<leader>uW Toggle wrapscan`
 `<leader>un Change line numbering`
 `<leader>ui Change indent settings (set indent value)`
 `<leader>uT Toggle transparency`

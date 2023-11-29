@@ -115,6 +115,7 @@ return {
     ["<leader>fs"] = { "<cmd>Telescope projects<cr>", desc = "Browse Sessions" },
     ["<leader>fg"] = { "<cmd>Telescope ast_grep<cr>", desc = "AST Grep" },
 
+    ["<leader>uW"] = { "<cmd>set wrapscan!<cr>", desc = "Toggle wrapscan" },
     ["<leader>uq"] = { function() require("notify").dismiss() end, desc = "Dismiss notify message" },
 
     ["<leader>a"] = { name = "Action / Annotation" },
