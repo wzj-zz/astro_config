@@ -39,8 +39,14 @@ l loop
 
   `<M-k> Previous Indent`
   `<M-j> Next Indent`
-  `<M-[> Indent Top`
-  `<M-]> Indent Bottom`
+
+  `<M-[> Previous Mark`
+  `<M-]> Next Mark`
+
+  `<S-M-j> Next Recently Set Highlight`
+  `<S-M-k> Previous Recently Set Highlight`
+  `<S-M-h> Next Nearest Highlight`
+  `<S-M-l> Previous Nearest Highlight`
 
 ## lsp
 
@@ -191,6 +197,11 @@ https://github.com/azabiong/vim-highlighter
   `f<C-s> Save Highlight`
   `f<C-h> Load Highlight`
   `f<Tab> Find Highlight (similar to Telescope grep)`
+
+  `<S-M-j> Next Recently Set Highlight`
+  `<S-M-k> Previous Recently Set Highlight`
+  `<S-M-h> Next Nearest Highlight`
+  `<S-M-l> Previous Nearest Highlight`
 
 ## telescope-undo.nvim
 
