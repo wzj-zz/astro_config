@@ -156,6 +156,7 @@ l loop
 
 ## Local
 
+`<leader>,, Set cwd or Open file with clipboard path`
 `<leader>,1 Yank directory path`
 `<leader>,2 Yank filename`
 `<leader>,3 Yank full path`

@@ -136,7 +136,7 @@ return {
           print "Invalid Path !!!"
         end
       end,
-      desc = "Set CWD With ClipBoard",
+      desc = "Set cwd or Open file with clipboard",
     },
 
     ["<leader>,p"] = { "<cmd>ProjectRoot<cr>", desc = "Set Project Root" },
