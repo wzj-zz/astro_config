@@ -42,6 +42,7 @@ return {
     ["<M-.>"] = { "<cmd>normal ]A<cr>", desc = "Next Argument End" },
     ["<M-b>"] = { "<cmd>normal [a<cr>", desc = "Previous Argument Start" },
     ["<S-M-b>"] = { "<cmd>normal [K<cr>", desc = "Previous Block End" },
+    ["<S-M-e>"] = { "<cmd>normal ]k<cr>", desc = "Next Block Start" },
 
     ["<M-e>"] = { "<cmd>normal z%<cr>", desc = "Next Matchup Inside" },
     ["<M-u>"] = { "<cmd>normal [%<cr>", desc = "Matchup Outside" },

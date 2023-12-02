@@ -31,7 +31,9 @@ l loop
   `<M-,> Previous Argument End`
   `<M-.> Next Argument End`
   `<M-b> Previous Argument Start`
+
   `<S-M-b> Previous Block End`
+  `<S-M-e> Next Block Start`
 
   `<M-e> Next Matchup Inside`
   `<M-u> Matchup Outside`
