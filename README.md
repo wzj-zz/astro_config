@@ -179,7 +179,14 @@ l loop
 `<leader>,x xtools exec (python)`
 
 `<leader>,p Set Project Root (project.nvim)`
-`<leader>,c Set CMake Root`
+
+`<leader>,cc Set CMake Root`
+`<leader>,cx Set xmake Root`
+`<leader>,cb CMakeQuickBuild`
+`<leader>,ct CMakeSelectBuildType`
+`<leader>,cd CMakeQuickDebug`
+`<leader>,cf CMakeShowTargetFiles`
+`<leader>,cl CMakeClean`
 
 `<leader>,r  Overseer Run Task`
 `<leader>,oo Toggle Overseer`

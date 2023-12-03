@@ -144,7 +144,8 @@ return {
     ["<leader>,q"] = { "<cmd>copen<cr>", desc = "Open QuickFix" },
 
     ["<leader>,p"] = { "<cmd>ProjectRoot<cr>", desc = "Set Project Root" },
-    ["<leader>,c"] = {
+
+    ["<leader>,cc"] = {
       function()
         user_utils.adjust_path_from_clip()
         local path = vim.fn.getreg "*"
@@ -155,6 +156,26 @@ return {
       end,
       desc = "Set CMake Root",
     },
+
+    ["<leader>,cx"] = {
+      function()
+        user_utils.adjust_path_from_clip()
+        local path = vim.fn.getreg "*"
+        if user_utils.isdir(path) then
+          vim.cmd("cd " .. path)
+          vim.cmd "!xmake project -k cmakelists"
+          vim.cmd("CMakeSelectCwd " .. path)
+        end
+      end,
+      desc = "Set CMake Root",
+    },
+
+    ["<leader>,cb"] = { "<cmd>CMakeQuickBuild<cr>", desc = "CMakeQuickBuild" },
+    ["<leader>,ct"] = { "<cmd>CMakeSelectBuildType<cr>", desc = "CMakeSelectBuildType" },
+    ["<leader>,cd"] = { "<cmd>CMakeQuickDebug<cr>", desc = "CMakeQuickDebug" },
+    ["<leader>,cf"] = { "<cmd>CMakeShowTargetFiles<cr>", desc = "CMakeShowTargetFiles" },
+    ["<leader>,cl"] = { "<cmd>CMakeClean<cr>", desc = "CMakeClean" },
+    ["<leader>,c"] = { name = "C/CPP Action" },
 
     ["<leader>,x"] = {
       function() require("noice").redirect "w !xt -x -d" end,
