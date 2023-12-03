@@ -171,11 +171,15 @@ l loop
 `<leader>,e Sync Neotree With Current Buffer`
 
 `<leader>,a Show AST`
+`<leader>,q Open QuickFix`
 `<leader>,d Toggle Debug UI`
 
 `<leader>,s ToggleTerm shell`
 `<leader>,. ToggleTerm xtools (python)`
 `<leader>,x xtools exec (python)`
+
+`<leader>,p Set Project Root (project.nvim)`
+`<leader>,c Set CMake Root`
 
 `<leader>,r  Overseer Run Task`
 `<leader>,oo Toggle Overseer`

@@ -141,7 +141,20 @@ return {
       desc = "Set cwd or Open file with clipboard",
     },
 
+    ["<leader>,q"] = { "<cmd>copen<cr>", desc = "Open QuickFix" },
+
     ["<leader>,p"] = { "<cmd>ProjectRoot<cr>", desc = "Set Project Root" },
+    ["<leader>,c"] = {
+      function()
+        user_utils.adjust_path_from_clip()
+        local path = vim.fn.getreg "*"
+        if user_utils.isdir(path) then
+          vim.cmd("cd " .. path)
+          vim.cmd("CMakeSelectCwd " .. path)
+        end
+      end,
+      desc = "Set CMake Root",
+    },
 
     ["<leader>,x"] = {
       function() require("noice").redirect "w !xt -x -d" end,
