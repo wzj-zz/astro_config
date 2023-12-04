@@ -145,7 +145,7 @@ return {
 
     ["<leader>,p"] = { "<cmd>ProjectRoot<cr>", desc = "Set Project Root" },
 
-    ["<leader>,cc"] = {
+    ["<leader>kc"] = {
       function()
         user_utils.adjust_path_from_clip()
         local path = vim.fn.getreg "*"
@@ -157,7 +157,7 @@ return {
       desc = "Set CMake Root",
     },
 
-    ["<leader>,cx"] = {
+    ["<leader>kx"] = {
       function()
         user_utils.adjust_path_from_clip()
         local path = vim.fn.getreg "*"
@@ -170,15 +170,16 @@ return {
       desc = "Set CMake Root",
     },
 
-    ["<leader>,ca"] = { ":CMakeLaunchArgs ", desc = "CMakeLaunchArgs" },
-    ["<leader>,cb"] = { "<cmd>CMakeBuild<cr>", desc = "CMakeBuild" },
-    ["<leader>,cB"] = { "<cmd>CMakeQuickBuild<cr>", desc = "CMakeQuickBuild" },
-    ["<leader>,cd"] = { "<cmd>CMakeDebug<cr>", desc = "CMakeDebug" },
-    ["<leader>,ce"] = { "<cmd>CMakeSelectLaunchTarget<cr>", desc = "CMakeSelectLaunchTarget" },
-    ["<leader>,cf"] = { "<cmd>CMakeShowTargetFiles<cr>", desc = "CMakeShowTargetFiles" },
-    ["<leader>,ct"] = { "<cmd>CMakeSelectBuildType<cr>", desc = "CMakeSelectBuildType" },
-    ["<leader>,cl"] = { "<cmd>CMakeClean<cr>", desc = "CMakeClean" },
-    ["<leader>,c"] = { name = "C/CPP Action" },
+    ["<leader>ka"] = { ":CMakeLaunchArgs ", desc = "CMakeLaunchArgs" },
+    ["<leader>kb"] = { "<cmd>CMakeBuild<cr>", desc = "CMakeBuild" },
+    ["<leader>kB"] = { "<cmd>CMakeQuickBuild<cr>", desc = "CMakeQuickBuild" },
+    ["<leader>kd"] = { "<cmd>CMakeDebug<cr>", desc = "CMakeDebug" },
+    ["<leader>ke"] = { "<cmd>CMakeSelectLaunchTarget<cr>", desc = "CMakeSelectLaunchTarget" },
+    ["<leader>kf"] = { "<cmd>CMakeShowTargetFiles<cr>", desc = "CMakeShowTargetFiles" },
+    ["<leader>kg"] = { ":CMakeGenerate ", desc = "CMakeGenerate" },
+    ["<leader>kt"] = { "<cmd>CMakeSelectBuildType<cr>", desc = "CMakeSelectBuildType" },
+    ["<leader>kl"] = { "<cmd>CMakeClean<cr>", desc = "CMakeClean" },
+    ["<leader>k"] = { name = "C/CPP Action" },
 
     ["<leader>,x"] = {
       function() require("noice").redirect "w !xt -x -d" end,

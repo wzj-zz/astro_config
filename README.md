@@ -180,16 +180,17 @@ l loop
 
 `<leader>,p Set Project Root (project.nvim)`
 
-`<leader>,cc Set CMake Root`
-`<leader>,cx Set xmake Root`
-`<leader>,ca CMakeLaunchArgs`
-`<leader>,cb CMakeBuild`
-`<leader>,cB CMakeQuickBuild`
-`<leader>,cd CMakeDebug`
-`<leader>,ce CMakeSelectLaunchTarget`
-`<leader>,cf CMakeShowTargetFiles`
-`<leader>,ct CMakeSelectBuildType`
-`<leader>,cl CMakeClean`
+`<leader>kc Set CMake Root`
+`<leader>kx Set xmake Root`
+`<leader>ka CMakeLaunchArgs`
+`<leader>kb CMakeBuild`
+`<leader>kB CMakeQuickBuild`
+`<leader>kd CMakeDebug`
+`<leader>ke CMakeSelectLaunchTarget`
+`<leader>kf CMakeShowTargetFiles`
+`<leader>kg CMakeGenerate`
+`<leader>kt CMakeSelectBuildType`
+`<leader>kl CMakeClean`
 
 `<leader>,r  Overseer Run Task`
 `<leader>,oo Toggle Overseer`
