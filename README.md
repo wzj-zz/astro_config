@@ -67,6 +67,11 @@ l loop
 `<leader>lx Search diagnostics`
 `<leader>li LSP information`
 
+`<leader>xx Document Diagnostics (Trouble)`
+`<leader>xX Workspace Diagnostics (Trouble)`
+`<leader>xl Location List (Trouble)`
+`<leader>xq Quickfix List (Trouble)`
+
 ## dap
 
 `<leader>db Toggle Breakpoint (F9)`
@@ -185,6 +190,7 @@ l loop
 `<leader>uN Toggle Notifications`
 `<leader>uH Toggle LSP inlay hints (buffer)`
 `<leader>ux Toggle Twilight (focus on AST)`
+`<leader>uD Toggle virtual diagnostics lines (lsp_lines.nvim)`
 
 ## Local
 
@@ -318,6 +324,16 @@ Telescope:
 `<C-f> find_file`
 `<C-b> find_file (all file)`
 `{<cr>, <C-t>} Change cwd to selection / Open file to selection`
+
+## trouble.nvim
+
+https://github.com/folke/trouble.nvim
+
+normal:
+`<leader>xx Document Diagnostics (Trouble)`
+`<leader>xX Workspace Diagnostics (Trouble)`
+`<leader>xl Location List (Trouble)`
+`<leader>xq Quickfix List (Trouble)`
 
 ## project.nvim 项目管理
 
