@@ -170,10 +170,13 @@ return {
       desc = "Set CMake Root",
     },
 
-    ["<leader>,cb"] = { "<cmd>CMakeQuickBuild<cr>", desc = "CMakeQuickBuild" },
-    ["<leader>,ct"] = { "<cmd>CMakeSelectBuildType<cr>", desc = "CMakeSelectBuildType" },
-    ["<leader>,cd"] = { "<cmd>CMakeQuickDebug<cr>", desc = "CMakeQuickDebug" },
+    ["<leader>,ca"] = { ":CMakeLaunchArgs ", desc = "CMakeLaunchArgs" },
+    ["<leader>,cb"] = { "<cmd>CMakeBuild<cr>", desc = "CMakeBuild" },
+    ["<leader>,cB"] = { "<cmd>CMakeQuickBuild<cr>", desc = "CMakeQuickBuild" },
+    ["<leader>,cd"] = { "<cmd>CMakeDebug<cr>", desc = "CMakeDebug" },
+    ["<leader>,ce"] = { "<cmd>CMakeSelectLaunchTarget<cr>", desc = "CMakeSelectLaunchTarget" },
     ["<leader>,cf"] = { "<cmd>CMakeShowTargetFiles<cr>", desc = "CMakeShowTargetFiles" },
+    ["<leader>,ct"] = { "<cmd>CMakeSelectBuildType<cr>", desc = "CMakeSelectBuildType" },
     ["<leader>,cl"] = { "<cmd>CMakeClean<cr>", desc = "CMakeClean" },
     ["<leader>,c"] = { name = "C/CPP Action" },
 

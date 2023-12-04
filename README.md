@@ -182,10 +182,13 @@ l loop
 
 `<leader>,cc Set CMake Root`
 `<leader>,cx Set xmake Root`
-`<leader>,cb CMakeQuickBuild`
-`<leader>,ct CMakeSelectBuildType`
-`<leader>,cd CMakeQuickDebug`
+`<leader>,ca CMakeLaunchArgs`
+`<leader>,cb CMakeBuild`
+`<leader>,cB CMakeQuickBuild`
+`<leader>,cd CMakeDebug`
+`<leader>,ce CMakeSelectLaunchTarget`
 `<leader>,cf CMakeShowTargetFiles`
+`<leader>,ct CMakeSelectBuildType`
 `<leader>,cl CMakeClean`
 
 `<leader>,r  Overseer Run Task`
