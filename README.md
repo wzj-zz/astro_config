@@ -67,6 +67,30 @@ l loop
 `<leader>lx Search diagnostics`
 `<leader>li LSP information`
 
+## dap
+
+`<leader>db Toggle Breakpoint (F9)`
+`<leader>dB clear Breakpoints`
+`<leader>dC Conditional Breakpoint (S-F9)`
+
+`<leader>dc Start/Continue (F5)`
+`<leader>ds Run To Cursor`
+`<leader>di Step Into (F11)`
+`<leader>do Step Over (F10)`
+`<leader>dO Step Out (S-F11)`
+`<leader>dp Pause (F6)`
+
+`<leader>dh Debug Hover`
+`<leader>dE Evaluate Input`
+`<leader>dR Toggle REPL`
+
+`<leader>dq Close Session`
+`<leader>du Toggle Debugger UI`
+
+`<leader>df Telescope DAP frames`
+`<leader>dv Telescope DAP variables`
+`<leader>dl Telescope DAP list breakpoints`
+
 ## Git
 
 `<leader>gg Open Neogit Tab Page`

@@ -1,3 +1,20 @@
+local dap = {
+  "nvim-telescope/telescope-dap.nvim",
+  keys = {
+    { "<leader>df", function() require("telescope").extensions.dap.frames() end, desc = "Telescope DAP frames" },
+    {
+      "<leader>dv",
+      function() require("telescope").extensions.dap.variables() end,
+      desc = "Telescope DAP variables",
+    },
+    {
+      "<leader>dl",
+      function() require("telescope").extensions.dap.list_breakpoints() end,
+      desc = "Telescope DAP list breakpoints",
+    },
+  },
+}
+
 local project_nvim = {
   "jay-babu/project.nvim",
   main = "project_nvim",
@@ -54,6 +71,7 @@ return {
     "nvim-telescope/telescope.nvim",
 
     dependencies = {
+      dap,
       ast_grep,
       lua_snip,
       project_nvim,
@@ -103,6 +121,7 @@ return {
     config = function(plugin, opts)
       require "plugins.configs.telescope"(plugin, opts)
       local telescope = require "telescope"
+      telescope.load_extension "dap"
       telescope.load_extension "live_grep_args"
       telescope.load_extension "file_browser"
       telescope.load_extension "ast_grep"
