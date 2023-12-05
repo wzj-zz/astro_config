@@ -81,6 +81,7 @@ l loop
 
 `<leader>xm Buf Marks (Location)`
 `<leader>xM Global Marks (Location)`
+`<leader>xh Highlight (Quickfix)`
 
 ## dap
 

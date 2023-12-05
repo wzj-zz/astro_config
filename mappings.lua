@@ -116,6 +116,10 @@ return {
 
     ["<leader>xm"] = { "<cmd>MarksListBuf<cr>", desc = "Buf Marks (Location)" },
     ["<leader>xM"] = { "<cmd>MarksListGlobal<cr>", desc = "Global Marks (Location)" },
+    ["<leader>xh"] = {
+      "<cmd>exe 'vimgrep /\\v('. HiList()->map({i,v -> v.pattern})->join('\\v|'). '\\v)/gj %' | copen<cr>",
+      desc = "Highlight (Quickfix)",
+    },
     ["<leader>x"] = { name = "QuickFix / Location" },
 
     ["<leader>kc"] = {
