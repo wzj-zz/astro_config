@@ -18,6 +18,7 @@ return {
       { prefix .. "t", "<cmd>Trouble lsp_type_definitions<cr>", desc = "LSP Type Definitions (Trouble)" },
     },
     opts = {
+      cycle_results = false,
       use_diagnostic_signs = true,
       action_keys = {
         close = { "q", "<esc>" },
