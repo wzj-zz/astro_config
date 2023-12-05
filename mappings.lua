@@ -8,6 +8,7 @@ return {
     ["<M-t>"] = { "<cmd>Trouble lsp_type_definitions<cr>", desc = "Goto Type Definition" },
     ["<M-i>"] = { "<cmd>Trouble lsp_implementations<cr>", desc = "Goto Implementation" },
     ["<M-c>"] = { function() require("telescope.builtin").lsp_incoming_calls() end, desc = "Incoming Calls" },
+    ["<S-M-c>"] = { function() require("telescope.builtin").lsp_outgoing_calls() end, desc = "Outgoing Calls" },
 
     ["<M-s>"] = {
       function() require("aerial").toggle() end,

@@ -81,9 +81,16 @@ return {
     },
 
     opts = function(_, opts)
+      local trouble = require "trouble.providers.telescope"
       local live_grep_args_actions = require "telescope-live-grep-args.actions"
 
       local new_opts = {
+        defaults = {
+          mappings = {
+            i = { ["<c-t>"] = trouble.open_with_trouble },
+            n = { ["<c-t>"] = trouble.open_with_trouble },
+          },
+        },
         extensions = {
           aerial = {
             show_nesting = {

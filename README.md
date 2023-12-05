@@ -57,9 +57,10 @@ l loop
 
 `<M-d> Goto Definition`
 `<M-r> Goto References`
-`<M-y> Goto Type Definition`
+`<M-t> Goto Type Definition`
 `<M-i> Goto Implementation`
 `<M-c> Incoming Calls`
+`<S-M-c> Outgoing Calls`
 
 `<leader>lf Format Buffer`
 `<leader>lr Rename current symbol`
@@ -333,11 +334,18 @@ Telescope:
 
 https://github.com/folke/trouble.nvim
 
+telescope:
+`<C-t> Open Result In Trouble`
+
 normal:
-`<leader>xx Document Diagnostics (Trouble)`
 `<leader>xX Workspace Diagnostics (Trouble)`
+`<leader>xx Document Diagnostics (Trouble)`
 `<leader>xl Location List (Trouble)`
 `<leader>xq Quickfix List (Trouble)`
+`<leader>xr LSP References (Trouble <M-r>)`
+`<leader>xi LSP Implementations (Trouble <M-i>)`
+`<leader>xd LSP Definitions (Trouble <M-d>)`
+`<leader>xt LSP Type Definitions (Trouble <M-t>)`
 
 ## project.nvim 项目管理
 
