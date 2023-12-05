@@ -114,28 +114,9 @@ return {
 
     ["<leader>a"] = { name = "Action / Annotation" },
 
-    ["<leader>,,"] = {
-      function()
-        user_utils.adjust_path_from_clip()
-        local path = vim.fn.getreg "*"
-        if user_utils.isdir(path) then
-          vim.cmd("cd " .. path)
-          print(vim.cmd "pwd")
-        elseif user_utils.isfile(path) then
-          local parent_path = user_utils.get_buf_file_dir()
-          vim.cmd("cd " .. parent_path)
-          vim.cmd("e " .. path)
-          print(vim.cmd "pwd")
-        else
-          print "Invalid Path !!!"
-        end
-      end,
-      desc = "Set cwd or Open file with clipboard",
-    },
-
-    ["<leader>,q"] = { "<cmd>copen<cr>", desc = "Open QuickFix" },
-
-    ["<leader>,p"] = { "<cmd>ProjectRoot<cr>", desc = "Set Project Root" },
+    ["<leader>xm"] = { "<cmd>MarksListBuf<cr>", desc = "Buf Marks (Location)" },
+    ["<leader>xM"] = { "<cmd>MarksListGlobal<cr>", desc = "Global Marks (Location)" },
+    ["<leader>x"] = { name = "QuickFix / Location" },
 
     ["<leader>kc"] = {
       function()
@@ -172,6 +153,29 @@ return {
     ["<leader>kt"] = { "<cmd>CMakeSelectBuildType<cr>", desc = "CMakeSelectBuildType" },
     ["<leader>kl"] = { "<cmd>CMakeClean<cr>", desc = "CMakeClean" },
     ["<leader>k"] = { name = "C/CPP Action" },
+
+    ["<leader>,,"] = {
+      function()
+        user_utils.adjust_path_from_clip()
+        local path = vim.fn.getreg "*"
+        if user_utils.isdir(path) then
+          vim.cmd("cd " .. path)
+          print(vim.cmd "pwd")
+        elseif user_utils.isfile(path) then
+          local parent_path = user_utils.get_buf_file_dir()
+          vim.cmd("cd " .. parent_path)
+          vim.cmd("e " .. path)
+          print(vim.cmd "pwd")
+        else
+          print "Invalid Path !!!"
+        end
+      end,
+      desc = "Set cwd or Open file with clipboard",
+    },
+
+    ["<leader>,q"] = { "<cmd>copen<cr>", desc = "Open QuickFix (bqf)" },
+    ["<leader>,l"] = { "<cmd>lopen<cr>", desc = "Open Location (bqf)" },
+    ["<leader>,p"] = { "<cmd>ProjectRoot<cr>", desc = "Set Project Root" },
 
     ["<leader>,x"] = {
       function() require("noice").redirect "w !xt -x -d" end,

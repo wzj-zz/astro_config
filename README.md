@@ -68,6 +68,8 @@ l loop
 `<leader>lx Search diagnostics`
 `<leader>li LSP information`
 
+## QuickFix / Location
+
 `<leader>xX Workspace Diagnostics (Trouble)`
 `<leader>xx Document Diagnostics (Trouble)`
 `<leader>xl Location List (Trouble)`
@@ -76,6 +78,9 @@ l loop
 `<leader>xi LSP Implementations (Trouble)`
 `<leader>xd LSP Definitions (Trouble)`
 `<leader>xt LSP Type Definitions (Trouble)`
+
+`<leader>xm Buf Marks (Location)`
+`<leader>xM Global Marks (Location)`
 
 ## dap
 
@@ -195,6 +200,7 @@ l loop
 `<leader>uN Toggle Notifications`
 `<leader>uH Toggle LSP inlay hints (buffer)`
 `<leader>ux Toggle Twilight (focus on AST)`
+`<leader>ud Toggle diagnostics`
 `<leader>uD Toggle virtual diagnostics lines (lsp_lines.nvim)`
 
 ## Local
@@ -206,7 +212,8 @@ l loop
 `<leader>,e Sync Neotree With Current Buffer`
 
 `<leader>,a Show AST`
-`<leader>,q Open QuickFix`
+`<leader>,q Open QuickFix (bqf)`
+`<leader>,l Open Location (bqf)`
 `<leader>,d Toggle Debug UI`
 
 `<leader>,s ToggleTerm shell`
