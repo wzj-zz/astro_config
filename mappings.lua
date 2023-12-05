@@ -3,19 +3,10 @@ local user_utils = require "user.utils"
 return {
   -- Normal mode
   n = {
-    ["<M-d>"] = {
-      function() require("telescope.builtin").lsp_definitions() end,
-      desc = "Goto Definition",
-    },
-    ["<M-r>"] = { function() require("telescope.builtin").lsp_references() end, desc = "Goto References" },
-    ["<M-y>"] = {
-      function() require("telescope.builtin").lsp_type_definitions() end,
-      desc = "Goto Type Definition",
-    },
-    ["<M-i>"] = {
-      function() require("telescope.builtin").lsp_implementations() end,
-      desc = "Goto Implementation",
-    },
+    ["<M-d>"] = { "<cmd>Trouble lsp_definitions<cr>", desc = "Goto Definition" },
+    ["<M-r>"] = { "<cmd>Trouble lsp_references<cr>", desc = "Goto References" },
+    ["<M-t>"] = { "<cmd>Trouble lsp_type_definitions<cr>", desc = "Goto Type Definition" },
+    ["<M-i>"] = { "<cmd>Trouble lsp_implementations<cr>", desc = "Goto Implementation" },
     ["<M-c>"] = { function() require("telescope.builtin").lsp_incoming_calls() end, desc = "Incoming Calls" },
 
     ["<M-s>"] = {

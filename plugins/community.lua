@@ -41,8 +41,6 @@ return {
   },
 
   { import = "astrocommunity.indent.mini-indentscope" },
-
-  { import = "astrocommunity.diagnostics.trouble-nvim" },
   { import = "astrocommunity.diagnostics.lsp_lines-nvim" },
 
   { import = "astrocommunity.editing-support.rainbow-delimiters-nvim" },

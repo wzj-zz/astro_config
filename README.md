@@ -67,10 +67,14 @@ l loop
 `<leader>lx Search diagnostics`
 `<leader>li LSP information`
 
-`<leader>xx Document Diagnostics (Trouble)`
 `<leader>xX Workspace Diagnostics (Trouble)`
+`<leader>xx Document Diagnostics (Trouble)`
 `<leader>xl Location List (Trouble)`
 `<leader>xq Quickfix List (Trouble)`
+`<leader>xr LSP References (Trouble)`
+`<leader>xi LSP Implementations (Trouble)`
+`<leader>xd LSP Definitions (Trouble)`
+`<leader>xt LSP Type Definitions (Trouble)`
 
 ## dap
 
