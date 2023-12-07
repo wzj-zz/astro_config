@@ -246,7 +246,7 @@ l loop
 
 # Plugin
 
-## vim-highlighter
+## vim-highlighter 单词高亮/高亮间跳转
 
 https://github.com/azabiong/vim-highlighter
 
@@ -263,7 +263,7 @@ https://github.com/azabiong/vim-highlighter
   `<S-M-h> Next Nearest Highlight`
   `<S-M-l> Previous Nearest Highlight`
 
-## telescope-undo.nvim
+## telescope-undo.nvim 撤销树
 
 https://github.com/debugloop/telescope-undo.nvim
 
@@ -281,7 +281,16 @@ https://github.com/debugloop/telescope-undo.nvim
   `"Y" yank deletions`
   `"u" yank restore`
 
-## neoclip
+## Wildfire 基于 TreeSitter 的增量选择
+
+https://github.com/SUSTech-data/wildfire.nvim
+
+- normal:
+  `<cr> Init selection and do incremental selection if you have initilized (so just keep pressing CR)`
+  `<bs> Decremental selection`
+  `<number><cr> Accelerate selection with count prefix`
+
+## neoclip 剪切板历史记录
 
 https://github.com/AckslD/nvim-neoclip.lua
 
@@ -305,7 +314,7 @@ https://github.com/AckslD/nvim-neoclip.lua
   `"e" edit`
   `<C-a> select`
 
-## marks.nvim
+## marks.nvim 优化内置书签的体验
 
 https://github.com/chentoast/marks.nvim
 
@@ -326,7 +335,7 @@ https://github.com/chentoast/marks.nvim
 | m{          | Move to the previous bookmark having the same type as the bookmark under the cursor. Works across buffers. |
 | dm=         | Delete the bookmark under the cursor.                                                                      |
 
-## telescope-zoxide
+## telescope-zoxide 目录跳转
 
 https://github.com/jvgrootveld/telescope-zoxide
 
@@ -338,7 +347,7 @@ Telescope:
 `<C-b> find_file (all file)`
 `{<cr>, <C-t>} Change cwd to selection / Open file to selection`
 
-## trouble.nvim
+## trouble.nvim Diagnostics/LSP/Quickfix/Location 增强
 
 https://github.com/folke/trouble.nvim
 
