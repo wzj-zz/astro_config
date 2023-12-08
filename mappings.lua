@@ -125,9 +125,9 @@ return {
     ["<leader>kc"] = {
       function()
         user_utils.adjust_path_from_clip()
-        local path = vim.fn.getreg "*"
+        local path = user_utils.get_clip()
         if user_utils.isdir(path) then
-          vim.cmd("cd " .. path)
+          user_utils.cd(path)
           vim.cmd("CMakeSelectCwd " .. path)
         end
       end,
@@ -148,10 +148,10 @@ return {
     ["<leader>,,"] = {
       function()
         user_utils.adjust_path_from_clip()
-        local path = vim.fn.getreg "*"
+        local path = user_utils.get_clip()
         if user_utils.isdir(path) then
-          vim.cmd("cd " .. path)
-          print(vim.cmd "pwd")
+          user_utils.cd(path)
+          print(user_utils.cwd())
         elseif user_utils.isfile(path) then
           vim.cmd("e " .. path)
         else
@@ -199,10 +199,18 @@ return {
 
     ["<leader>,d"] = { "<cmd>DBUIToggle<cr>", desc = "DBUIToggle" },
 
-    ["<leader>,e"] = { "<cmd>cd %:h<cr><cmd>Neotree focus<cr>", desc = "Sync Neotree With Current Buffer" },
+    ["<leader>,e"] = { "<cmd>cd %:h<cr><cmd>Neotree focus<cr><cmd>pwd<cr>", desc = "Sync Neotree With Current Buffer" },
     ["<leader>,1"] = { '<cmd>let @+ = expand("%:h")<cr><cmd>echo expand("%:h")<cr>', desc = "Yank directory path" },
     ["<leader>,2"] = { '<cmd>let @+ = expand("%:t")<cr><cmd>echo expand("%:t")<cr>', desc = "Yank filename" },
     ["<leader>,3"] = { '<cmd>let @+ = expand("%:p")<cr><cmd>echo expand("%:p")<cr>', desc = "Yank full path" },
+    ["<leader>,c"] = {
+      function()
+        local work_dir = user_utils.cwd()
+        user_utils.set_clip(work_dir)
+        print(work_dir)
+      end,
+      desc = "Yank CWD",
+    },
 
     ["<leader>,hh"] = { "<cmd>%!xxd -g 1<cr>", desc = "Switch to hex view" },
     ["<leader>,hr"] = { "<cmd>%!xxd -r<cr>", desc = "Switch to binary view" },

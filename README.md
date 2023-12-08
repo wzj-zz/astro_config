@@ -210,6 +210,7 @@ l loop
 `<leader>,1 Yank directory path`
 `<leader>,2 Yank filename`
 `<leader>,3 Yank full path`
+`<leader>,c Yank CWD`
 `<leader>,e Sync Neotree With Current Buffer`
 
 `<leader>,a Show AST`

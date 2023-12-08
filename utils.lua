@@ -3,16 +3,16 @@ local M = {}
 ------------------------------------------------------------------------------
 ---neovim
 
-function M.isdir(path) return vim.fn.isdirectory(path) == 1 end
+function M.get_clip() return vim.fn.getreg "+" end
+function M.set_clip(data) return vim.fn.setreg("+", data) end
 
+function M.isdir(path) return vim.fn.isdirectory(path) == 1 end
 function M.isfile(path) return vim.fn.filereadable(path) == 1 end
 
 function M.cwd() return vim.fn.getcwd() end
-
 function M.cd(path) vim.fn.chdir(path) end
 
 function M.filename(path) return vim.fn.fnamemodify(path, ":t") end
-
 function M.dirname(path) return vim.fn.fnamemodify(path, ":h") end
 
 function M.get_buf_file_path()
