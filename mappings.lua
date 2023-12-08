@@ -153,10 +153,7 @@ return {
           vim.cmd("cd " .. path)
           print(vim.cmd "pwd")
         elseif user_utils.isfile(path) then
-          local parent_path = user_utils.get_buf_file_dir()
-          vim.cmd("cd " .. parent_path)
           vim.cmd("e " .. path)
-          print(vim.cmd "pwd")
         else
           print "Invalid Path !!!"
         end
