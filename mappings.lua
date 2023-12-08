@@ -134,19 +134,6 @@ return {
       desc = "Set CMake Root",
     },
 
-    ["<leader>kx"] = {
-      function()
-        user_utils.adjust_path_from_clip()
-        local path = vim.fn.getreg "*"
-        if user_utils.isdir(path) then
-          vim.cmd("cd " .. path)
-          vim.cmd "!xmake project -k cmakelists"
-          vim.cmd("CMakeSelectCwd " .. path)
-        end
-      end,
-      desc = "Set CMake Root",
-    },
-
     ["<leader>ka"] = { ":CMakeLaunchArgs ", desc = "CMakeLaunchArgs" },
     ["<leader>kb"] = { "<cmd>CMakeBuild<cr>", desc = "CMakeBuild" },
     ["<leader>kB"] = { "<cmd>CMakeQuickBuild<cr>", desc = "CMakeQuickBuild" },

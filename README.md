@@ -224,7 +224,6 @@ l loop
 `<leader>,p Set Project Root (project.nvim)`
 
 `<leader>kc Set CMake Root`
-`<leader>kx Set xmake Root`
 `<leader>ka CMakeLaunchArgs`
 `<leader>kb CMakeBuild`
 `<leader>kB CMakeQuickBuild`
@@ -234,6 +233,11 @@ l loop
 `<leader>kg CMakeGenerate`
 `<leader>kt CMakeSelectBuildType`
 `<leader>kl CMakeClean`
+
+`<leader>kk CompilerOpen (select compiler)`
+`<leader>kx CompilerStop (clean compile result)`
+`<leader>kb CompilerStopRedo (clean compile result and redo)`
+`<leader>kr CompilerToggleResults (toggle compile result)`
 
 `<leader>,r  Overseer Run Task`
 `<leader>,oo Toggle Overseer`
@@ -245,6 +249,16 @@ l loop
 `<leader>,ho Open binary file`
 
 # Plugin
+
+## compiler.nvim Neovim编译器, 无需进行任何配置编译代码
+
+https://github.com/Zeioth/compiler.nvim
+
+- normal mode
+  `<leader>kk CompilerOpen (select compiler)`
+  `<leader>kx CompilerStop (clean compile result)`
+  `<leader>kb CompilerStopRedo (clean compile result and redo)`
+  `<leader>kr CompilerToggleResults (toggle compile result)`
 
 ## vim-highlighter 单词高亮/高亮间跳转
 
@@ -267,7 +281,8 @@ https://github.com/azabiong/vim-highlighter
 
 https://github.com/debugloop/telescope-undo.nvim
 
-`<leader>fu Find undos`
+- normal mode
+  `<leader>fu Find undos`
 
 **Telescope**
 
@@ -285,7 +300,7 @@ https://github.com/debugloop/telescope-undo.nvim
 
 https://github.com/SUSTech-data/wildfire.nvim
 
-- normal:
+- normal mode
   `<cr> Init selection and do incremental selection if you have initilized (so just keep pressing CR)`
   `<bs> Decremental selection`
   `<number><cr> Accelerate selection with count prefix`
@@ -339,40 +354,40 @@ https://github.com/chentoast/marks.nvim
 
 https://github.com/jvgrootveld/telescope-zoxide
 
-normal:
-`<leader>fz -> Telescope zoxide`
+- normal mode
+  `<leader>fz -> Telescope zoxide`
 
-Telescope:
-`<C-f> find_file`
-`<C-b> find_file (all file)`
-`{<cr>, <C-t>} Change cwd to selection / Open file to selection`
+- Telescope
+  `<C-f> find_file`
+  `<C-b> find_file (all file)`
+  `{<cr>, <C-t>} Change cwd to selection / Open file to selection`
 
 ## trouble.nvim Diagnostics/LSP/Quickfix/Location 增强
 
 https://github.com/folke/trouble.nvim
 
-telescope:
-`<C-t> Open Result In Trouble`
+- Telescope
+  `<C-t> Open Result In Trouble`
 
-normal:
-`<leader>xX Workspace Diagnostics (Trouble)`
-`<leader>xx Document Diagnostics (Trouble)`
-`<leader>xl Location List (Trouble)`
-`<leader>xq Quickfix List (Trouble)`
-`<leader>xr LSP References (Trouble <M-r>)`
-`<leader>xi LSP Implementations (Trouble <M-i>)`
-`<leader>xd LSP Definitions (Trouble <M-d>)`
-`<leader>xt LSP Type Definitions (Trouble <M-t>)`
+- normal mode
+  `<leader>xX Workspace Diagnostics (Trouble)`
+  `<leader>xx Document Diagnostics (Trouble)`
+  `<leader>xl Location List (Trouble)`
+  `<leader>xq Quickfix List (Trouble)`
+  `<leader>xr LSP References (Trouble <M-r>)`
+  `<leader>xi LSP Implementations (Trouble <M-i>)`
+  `<leader>xd LSP Definitions (Trouble <M-d>)`
+  `<leader>xt LSP Type Definitions (Trouble <M-t>)`
 
 ## project.nvim 项目管理
 
 https://github.com/ahmedkhalf/project.nvim
 
-normal:
-`<leader>fs -> Browse sessions`
-`<leader>,p -> Set Project Root`
+- normal mode
+  `<leader>fs -> Browse sessions`
+  `<leader>,p -> Set Project Root`
 
-Telescope:
+- Telescope
 
 | Normal mode | Insert mode | Action                   |
 | ----------- | ----------- | ------------------------ |
@@ -387,21 +402,22 @@ Telescope:
 
 https://github.com/nvim-telescope/telescope-live-grep-args.nvim
 
-normal:
-`<leader>fe live_grep_args`
+- normal mode
+  `<leader>fe live_grep_args`
 
-Telescope:
-`<C-a> add ""`
-`<C-f> add -t`
-`<C-i> add --iglob`
+- Telescope
+  `<C-a> add ""`
+  `<C-f> add -t`
+  `<C-i> add --iglob`
 
 ## nvim-surround 轻松添加/更改/删除周围的分隔符对
 
 https://github.com/kylechui/nvim-surround
 
-`ys{motion}{char} add surround`
-`ds{motion}{char} delete surround`
-`cs{motion}{char} change surround`
+- normal mode
+  `ys{motion}{char} add surround`
+  `ds{motion}{char} delete surround`
+  `cs{motion}{char} change surround`
 
 ## telescope-file-browser.nvim 文件浏览器
 
