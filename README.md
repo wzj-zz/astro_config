@@ -235,10 +235,11 @@ l loop
 `<leader>kt CMakeSelectBuildType`
 `<leader>kl CMakeClean`
 
-`<leader>kk CompilerOpen (select compiler)`
+`<leader>kk CompilerOpen (select compiler for current file/directory)`
+`<leader>ko CompilerOpen (select compiler for file/directory in clipboard)`
 `<leader>kx CompilerStop (clean compile result)`
-`<leader>kb CompilerStopRedo (clean compile result and redo)`
-`<leader>kr CompilerToggleResults (toggle compile result)`
+`<leader>kr CompilerStopRedo (clean compile result and redo)`
+`<leader>ks CompilerToggleResults (toggle compile result)`
 
 `<leader>,r  Overseer Run Task`
 `<leader>,oo Toggle Overseer`
@@ -258,8 +259,8 @@ https://github.com/Zeioth/compiler.nvim
 - normal mode
   `<leader>kk CompilerOpen (select compiler)`
   `<leader>kx CompilerStop (clean compile result)`
-  `<leader>kb CompilerStopRedo (clean compile result and redo)`
-  `<leader>kr CompilerToggleResults (toggle compile result)`
+  `<leader>kr CompilerStopRedo (clean compile result and redo)`
+  `<leader>ks CompilerToggleResults (toggle compile result)`
 
 ## vim-highlighter 单词高亮/高亮间跳转
 
