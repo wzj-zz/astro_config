@@ -21,6 +21,26 @@ l loop
 
 # KeyMapping
 
+## harpoon2
+
+https://github.com/ThePrimeagen/harpoon/tree/harpoon2
+
+- normal mode
+  `<M-m> harpoon quick menu`
+  `<S-M-m> harpoon file append`
+  `<C-M-m> Show marks in Telescope`
+  `<leader>1 harpoon to file 1`
+  `<leader>2 harpoon to file 2`
+  `<leader>3 harpoon to file 3`
+  `<leader>4 harpoon to file 4`
+  `<leader>5 harpoon to file 5`
+
+- harpoon
+  `<C-s> quit menu and save marks`
+  `<M-q> quit menu without save marks`
+  `<M-f> goto marks (support line number)`
+  `<cr> goto marks`
+
 ## Motion
 
 - normal mode
