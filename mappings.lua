@@ -30,6 +30,12 @@ return {
     ["<S-M-i>"] = { "<cmd>normal ]f<cr>", desc = "Next Function Start" },
     ["<M-g>"] = { "<cmd>normal ]F<cr>", desc = "Next Function End" },
 
+    ["<S-M-v>"] = { "<cmd>normal [?<cr>", desc = "Previous conditional Start" },
+    ["<M-v>"] = { "<cmd>normal ]?<cr>", desc = "Next conditional Start" },
+
+    ["<S-M-p>"] = { "<cmd>normal [l<cr>", desc = "Previous Loop Start" },
+    ["<S-M-n>"] = { "<cmd>normal ]l<cr>", desc = "Next Loop Start" },
+
     ["<M-,>"] = { "<cmd>normal [A<cr>", desc = "Previous Argument End" },
     ["<M-.>"] = { "<cmd>normal ]A<cr>", desc = "Next Argument End" },
     ["<M-b>"] = { "<cmd>normal [a<cr>", desc = "Previous Argument Start" },

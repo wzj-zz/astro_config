@@ -48,6 +48,12 @@ https://github.com/ThePrimeagen/harpoon/tree/harpoon2
   `<S-M-i> Next Function Start`
   `<M-g> Next Function End`
 
+  `<S-M-v> Previous conditional Start`
+  `<M-v> Next conditional Start`
+
+  `<S-M-p> Previous Loop Start`
+  `<S-M-n> Next Loop Start`
+
   `<M-,> Previous Argument End`
   `<M-.> Next Argument End`
   `<M-b> Previous Argument Start`
@@ -465,7 +471,7 @@ https://github.com/nvim-telescope/telescope-file-browser.nvim
 | `<S-Tab>`       | see `telescope.nvim` | Toggle selection and move to prev selection                                      |
 | `<bs>/`         | backspace            | With an empty prompt, goes to parent dir. Otherwise acts normally                |
 
-## flash.nvim 光标导航
+## flash.nvim
 
 https://github.com/folke/flash.nvim
 
