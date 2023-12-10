@@ -29,8 +29,8 @@ return {
     ["<S-M-u>"] = { "<cmd>normal [f<cr>", desc = "Previous function start" },
     ["<S-M-i>"] = { "<cmd>normal ]f<cr>", desc = "Next function start" },
 
-    ["<S-M-p>"] = { "<cmd>normal [s<cr>", desc = "Previous callsite start" },
-    ["<S-M-n>"] = { "<cmd>normal ]s<cr>", desc = "Next callsite start" },
+    ["<M-h>"] = { "<cmd>normal [s<cr>", desc = "Previous callsite start" },
+    ["<M-l>"] = { "<cmd>normal ]s<cr>", desc = "Next callsite start" },
 
     ["<S-M-v>"] = { "<cmd>normal [?<cr>", desc = "Previous conditional start" },
     ["<M-v>"] = { "<cmd>normal ]?<cr>", desc = "Next conditional start" },
@@ -65,8 +65,8 @@ return {
       desc = "Previous Buffer",
     },
 
-    ["<M-h>"] = { "<cmd>tabprevious<cr>", desc = "Previous Tab" },
-    ["<M-l>"] = { "<cmd>tabnext<cr>", desc = "Next Tab" },
+    ["<S-M-p>"] = { "<cmd>tabprevious<cr>", desc = "Previous Tab" },
+    ["<S-M-n>"] = { "<cmd>tabnext<cr>", desc = "Next Tab" },
     ["<M-q>"] = {
       function() require("astronvim.utils.buffer").close() end,
       desc = "Close buffer",

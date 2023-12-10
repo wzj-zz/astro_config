@@ -47,8 +47,8 @@ https://github.com/ThePrimeagen/harpoon/tree/harpoon2
   `<S-M-u> Previous function start`
   `<S-M-i> Next function start`
 
-  `<S-M-p> Previous callsite start`
-  `<S-M-n> Next callsite start`
+  `<M-h> Previous callsite start`
+  `<M-l> Next callsite start`
 
   `<S-M-v> Previous conditional start`
   `<M-v> Next conditional start`
@@ -173,8 +173,8 @@ https://github.com/ThePrimeagen/harpoon/tree/harpoon2
 `<leader>q Close Window`
 `<leader>br Revert Buffer`
 
-`<M-h> Previous Tab`
-`<M-l> Next Tab`
+`<S-M-p> Previous Tab`
+`<S-M-n> Next Tab`
 
 ## Find
 
