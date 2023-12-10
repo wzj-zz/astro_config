@@ -26,21 +26,24 @@ return {
       desc = "Search Symbols",
     },
 
-    ["<S-M-u>"] = { "<cmd>normal [f<cr>", desc = "Previous Function Start" },
-    ["<S-M-i>"] = { "<cmd>normal ]f<cr>", desc = "Next Function Start" },
-    ["<M-g>"] = { "<cmd>normal ]F<cr>", desc = "Next Function End" },
+    ["<S-M-u>"] = { "<cmd>normal [f<cr>", desc = "Previous function start" },
+    ["<S-M-i>"] = { "<cmd>normal ]f<cr>", desc = "Next function start" },
 
-    ["<S-M-v>"] = { "<cmd>normal [?<cr>", desc = "Previous conditional Start" },
-    ["<M-v>"] = { "<cmd>normal ]?<cr>", desc = "Next conditional Start" },
+    ["<S-M-g>"] = { "<cmd>normal [s<cr>", desc = "Previous callsite start" },
+    ["<M-g>"] = { "<cmd>normal ]s<cr>", desc = "Next callsite start" },
 
-    ["<S-M-p>"] = { "<cmd>normal [l<cr>", desc = "Previous Loop Start" },
-    ["<S-M-n>"] = { "<cmd>normal ]l<cr>", desc = "Next Loop Start" },
+    ["<S-M-v>"] = { "<cmd>normal [?<cr>", desc = "Previous conditional start" },
+    ["<M-v>"] = { "<cmd>normal ]?<cr>", desc = "Next conditional start" },
 
-    ["<M-,>"] = { "<cmd>normal [A<cr>", desc = "Previous Argument End" },
-    ["<M-.>"] = { "<cmd>normal ]A<cr>", desc = "Next Argument End" },
-    ["<M-b>"] = { "<cmd>normal [a<cr>", desc = "Previous Argument Start" },
-    ["<S-M-b>"] = { "<cmd>normal [K<cr>", desc = "Previous Block End" },
-    ["<S-M-e>"] = { "<cmd>normal ]k<cr>", desc = "Next Block Start" },
+    ["<S-M-p>"] = { "<cmd>normal [l<cr>", desc = "Previous loop start" },
+    ["<S-M-n>"] = { "<cmd>normal ]l<cr>", desc = "Next loop start" },
+
+    ["<M-,>"] = { "<cmd>normal [A<cr>", desc = "Previous argument end" },
+    ["<M-.>"] = { "<cmd>normal ]A<cr>", desc = "Next argument end" },
+    ["<M-b>"] = { "<cmd>normal [a<cr>", desc = "Previous argument start" },
+
+    ["<S-M-b>"] = { "<cmd>normal [K<cr>", desc = "Previous block end" },
+    ["<S-M-e>"] = { "<cmd>normal ]k<cr>", desc = "Next block start" },
 
     ["<M-e>"] = { "<cmd>normal z%<cr>", desc = "Next Matchup Inside" },
     ["<M-u>"] = { "<cmd>normal [%<cr>", desc = "Matchup Outside" },

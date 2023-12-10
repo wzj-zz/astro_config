@@ -43,6 +43,7 @@ return {
           ["]a"] = { query = "@parameter.inner", desc = "Next argument start" },
           ["]l"] = { query = "@loop.outer", desc = "Next loop start" },
           ["]?"] = { query = "@conditional.outer", desc = "Next conditional start" },
+          ["]s"] = { query = "@call.outer", desc = "Next callsite start" },
         },
         goto_next_end = {
           ["]K"] = { query = "@block.outer", desc = "Next block end" },
@@ -55,6 +56,7 @@ return {
           ["[a"] = { query = "@parameter.inner", desc = "Previous argument start" },
           ["[l"] = { query = "@loop.outer", desc = "Previous loop start" },
           ["[?"] = { query = "@conditional.outer", desc = "Previous conditional start" },
+          ["[s"] = { query = "@call.outer", desc = "Previous callsite start" },
         },
         goto_previous_end = {
           ["[K"] = { query = "@block.outer", desc = "Previous block end" },

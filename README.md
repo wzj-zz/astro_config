@@ -44,22 +44,24 @@ https://github.com/ThePrimeagen/harpoon/tree/harpoon2
 ## Motion
 
 - normal mode
-  `<S-M-u> Previous Function Start`
-  `<S-M-i> Next Function Start`
-  `<M-g> Next Function End`
+  `<S-M-u> Previous function start`
+  `<S-M-i> Next function start`
 
-  `<S-M-v> Previous conditional Start`
-  `<M-v> Next conditional Start`
+  `<S-M-g> Previous callsite start`
+  `<M-g> Next callsite start`
 
-  `<S-M-p> Previous Loop Start`
-  `<S-M-n> Next Loop Start`
+  `<S-M-v> Previous conditional start`
+  `<M-v> Next conditional start`
 
-  `<M-,> Previous Argument End`
-  `<M-.> Next Argument End`
-  `<M-b> Previous Argument Start`
+  `<S-M-p> Previous loop start`
+  `<S-M-n> Next loop start`
 
-  `<S-M-b> Previous Block End`
-  `<S-M-e> Next Block Start`
+  `<M-,> Previous argument end`
+  `<M-.> Next argument end`
+  `<M-b> Previous argument start`
+
+  `<S-M-b> Previous block end`
+  `<S-M-e> Next block start`
 
   `<M-e> Next Matchup Inside`
   `<M-u> Matchup Outside`
