@@ -47,14 +47,14 @@ https://github.com/ThePrimeagen/harpoon/tree/harpoon2
   `<S-M-u> Previous function start`
   `<S-M-i> Next function start`
 
-  `<S-M-g> Previous callsite start`
-  `<M-g> Next callsite start`
+  `<S-M-p> Previous callsite start`
+  `<S-M-n> Next callsite start`
 
   `<S-M-v> Previous conditional start`
   `<M-v> Next conditional start`
 
-  `<S-M-p> Previous loop start`
-  `<S-M-n> Next loop start`
+  `<S-M-g> Previous loop start`
+  `<M-g> Next loop start`
 
   `<M-,> Previous argument end`
   `<M-.> Next argument end`
@@ -170,6 +170,7 @@ https://github.com/ThePrimeagen/harpoon/tree/harpoon2
 `<M-n> Next Buffer`
 `<M-p> Previous Buffer`
 `<M-q> Close Buffer`
+`<leader>q Close Window`
 `<leader>br Revert Buffer`
 
 `<M-h> Previous Tab`

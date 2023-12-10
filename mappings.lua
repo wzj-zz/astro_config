@@ -29,14 +29,14 @@ return {
     ["<S-M-u>"] = { "<cmd>normal [f<cr>", desc = "Previous function start" },
     ["<S-M-i>"] = { "<cmd>normal ]f<cr>", desc = "Next function start" },
 
-    ["<S-M-g>"] = { "<cmd>normal [s<cr>", desc = "Previous callsite start" },
-    ["<M-g>"] = { "<cmd>normal ]s<cr>", desc = "Next callsite start" },
+    ["<S-M-p>"] = { "<cmd>normal [s<cr>", desc = "Previous callsite start" },
+    ["<S-M-n>"] = { "<cmd>normal ]s<cr>", desc = "Next callsite start" },
 
     ["<S-M-v>"] = { "<cmd>normal [?<cr>", desc = "Previous conditional start" },
     ["<M-v>"] = { "<cmd>normal ]?<cr>", desc = "Next conditional start" },
 
-    ["<S-M-p>"] = { "<cmd>normal [l<cr>", desc = "Previous loop start" },
-    ["<S-M-n>"] = { "<cmd>normal ]l<cr>", desc = "Next loop start" },
+    ["<S-M-g>"] = { "<cmd>normal [l<cr>", desc = "Previous loop start" },
+    ["<M-g>"] = { "<cmd>normal ]l<cr>", desc = "Next loop start" },
 
     ["<M-,>"] = { "<cmd>normal [A<cr>", desc = "Previous argument end" },
     ["<M-.>"] = { "<cmd>normal ]A<cr>", desc = "Next argument end" },
@@ -71,6 +71,7 @@ return {
       function() require("astronvim.utils.buffer").close() end,
       desc = "Close buffer",
     },
+    ["<leader>q"] = { "<cmd>close<cr>", desc = "Close window" },
 
     ["<leader>tl"] = { "<cmd>TermSelect<cr>", desc = "TermSelect" },
 
