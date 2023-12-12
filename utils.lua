@@ -21,6 +21,12 @@ function M.get_buf_file_path()
   return buffer_name
 end
 
+function M.get_buf_file_relpath()
+  local buf_path = vim.api.nvim_buf_get_name(0)
+  local buf_relpath = vim.fn.fnamemodify(buf_path, ":.")
+  return buf_relpath
+end
+
 function M.get_buf_file_name()
   local buffer_path = M.get_buf_file_path()
   local file_name = vim.fn.fnamemodify(buffer_path, ":t")
@@ -31,6 +37,12 @@ function M.get_buf_file_dir()
   local buffer_path = M.get_buf_file_path()
   local directory = vim.fn.fnamemodify(buffer_path, ":h")
   return directory
+end
+
+function M.get_cursor()
+  local current_window = vim.api.nvim_get_current_win()
+  local current_cursor = vim.api.nvim_win_get_cursor(current_window)
+  return current_cursor
 end
 
 function M.run(cmd, input) return vim.fn.system(cmd, input) end

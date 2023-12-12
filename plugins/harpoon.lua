@@ -1,3 +1,5 @@
+local user_utils = require "user.utils"
+
 return {
   {
     "theprimeagen/harpoon",
@@ -19,7 +21,17 @@ return {
       })
     end,
     keys = {
-      { "<S-M-m>", function() require("harpoon"):list():append() end, desc = "harpoon file append" },
+      {
+        "<S-M-m>",
+        function()
+          local item = {
+            value = user_utils.get_buf_file_relpath() .. ":" .. user_utils.get_cursor()[1],
+            { row = 1, col = 0 },
+          }
+          require("harpoon"):list():append(item)
+        end,
+        desc = "harpoon file append",
+      },
       {
         "<M-m>",
         function()
