@@ -85,7 +85,7 @@ https://github.com/ThePrimeagen/harpoon/tree/harpoon2
 
 `<M-d> Goto Definition`
 `<M-r> Goto References`
-`<M-t> Goto Type Definition`
+`<M-y> Goto Type Definition`
 `<M-i> Goto Implementation`
 `<M-c> Incoming Calls`
 `<S-M-c> Outgoing Calls`
