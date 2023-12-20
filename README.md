@@ -63,9 +63,10 @@ https://github.com/ThePrimeagen/harpoon/tree/harpoon2
   `<S-M-b> Previous block end`
   `<S-M-e> Next block start`
 
-  `<M-e> Next Matchup Inside`
-  `<M-u> Matchup Outside`
-  `<M-a> Matchup`
+  `<M-e> Next matchup inside`
+  `<M-u> Goto matchup outside`
+  `<M-a> Next matchup`
+  `<S-M-a> Previous matchup`
 
   `<M-k> Previous Indent`
   `<M-j> Next Indent`

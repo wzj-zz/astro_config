@@ -45,9 +45,10 @@ return {
     ["<S-M-b>"] = { "<cmd>normal [K<cr>", desc = "Previous block end" },
     ["<S-M-e>"] = { "<cmd>normal ]k<cr>", desc = "Next block start" },
 
-    ["<M-e>"] = { "<cmd>normal z%<cr>", desc = "Next Matchup Inside" },
-    ["<M-u>"] = { "<cmd>normal [%<cr>", desc = "Matchup Outside" },
-    ["<M-a>"] = { "<cmd>normal %<cr>", desc = "Matchup" },
+    ["<M-e>"] = { "<cmd>normal z%<cr>", desc = "Next matchup inside" },
+    ["<M-u>"] = { "<cmd>normal [%<cr>", desc = "Goto matchup outside" },
+    ["<M-a>"] = { "<cmd>normal %<cr>", desc = "Next matchup" },
+    ["<S-M-a>"] = { "<cmd>normal g%<cr>", desc = "Previous matchup" },
 
     ["<M-k>"] = { "<cmd>normal [u<cr>", desc = "Previous Indent" },
     ["<M-j>"] = { "<cmd>normal ]u<cr>", desc = "Next Indent" },
