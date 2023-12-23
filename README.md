@@ -334,6 +334,18 @@ L — inner-most child
 
 # Plugin
 
+## nvim-spectre
+
+https://github.com/nvim-pack/nvim-spectre
+
+- normal mode
+
+```
+<leader>sp Toggle Spectre
+<leader>sw Spectre (current word)
+<leader>sf Spectre (current file)
+```
+
 ## refactor.nvim
 
 https://github.com/ThePrimeagen/refactoring.nvim
