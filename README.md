@@ -334,6 +334,35 @@ L — inner-most child
 
 # Plugin
 
+## refactor.nvim
+
+https://github.com/ThePrimeagen/refactoring.nvim
+
+- normal mode
+
+```
+<leader>rb Extract Block
+<leader>rbf Extract Block To File
+<leader>rr Select Refactor
+<leader>rp Debug: Print Function
+<leader>rc Debug: Clean Up
+```
+
+- visual mode
+
+```
+<leader>re Extract Function
+<leader>rf Extract Function To File
+<leader>rv Extract Variable
+```
+
+- normal/visual mode
+
+```
+<leader>ri Inline Variable
+<leader>rd Debug: Print Variable
+```
+
 ## tshjkl.nvim
 
 https://github.com/gsuuon/tshjkl.nvim
