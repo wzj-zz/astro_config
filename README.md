@@ -346,6 +346,23 @@ https://github.com/nvim-pack/nvim-spectre
 <leader>sf Spectre (current file)
 ```
 
+## debugprint.nvim
+
+https://github.com/andrewferrier/debugprint.nvim
+
+- normal mode
+
+```
+<leader>ad Delete debugprints
+<leader>av Print debug info
+```
+
+- visual mode
+
+```
+<leader>av Print selection debug info
+```
+
 ## refactor.nvim
 
 https://github.com/ThePrimeagen/refactoring.nvim
