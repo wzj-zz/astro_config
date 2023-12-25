@@ -2,7 +2,6 @@ return {
   "AstroNvim/astrocommunity",
 
   { import = "astrocommunity.pack.cpp" },
-
   {
     "Civitasv/cmake-tools.nvim",
     cmd = { "CMakeSelectCwd" },
@@ -13,6 +12,7 @@ return {
       return opts
     end,
   },
+  { import = "astrocommunity.pack.cmake" },
 
   { import = "astrocommunity.pack.java" },
   { import = "astrocommunity.pack.lua" },

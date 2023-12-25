@@ -34,7 +34,6 @@ https://github.com/ThePrimeagen/harpoon/tree/harpoon2
 ```
 <M-m> harpoon quick menu
 <S-M-m> harpoon file append
-<C-M-m> Show marks in Telescope
 <leader>1 harpoon to file 1
 <leader>2 harpoon to file 2
 <leader>3 harpoon to file 3
@@ -106,6 +105,8 @@ L — inner-most child
 
 ## lsp
 
+- normal mode
+
 ```
 <M-s> Symbols Outline -> aerial.nvim
 <M-f> Search Symbols
@@ -126,6 +127,8 @@ L — inner-most child
 
 ## QuickFix / Location
 
+- normal mode
+
 ```
 <leader>xX Workspace Diagnostics (Trouble)
 <leader>xx Document Diagnostics (Trouble)
@@ -142,6 +145,8 @@ L — inner-most child
 ```
 
 ## dap
+
+- normal mode
 
 ```
 <leader>db Toggle Breakpoint (F9)
@@ -178,6 +183,29 @@ L — inner-most child
 <leader>gf Open Neogit In astro_config
 ```
 
+## Compile & Execute
+
+- normal mode
+
+```
+<leader>kc Set CMake Root
+<leader>ka CMakeLaunchArgs
+<leader>kb CMakeBuild
+<leader>kB CMakeQuickBuild
+<leader>kd CMakeDebug
+<leader>ke CMakeSelectLaunchTarget
+<leader>kf CMakeShowTargetFiles
+<leader>kg CMakeGenerate
+<leader>kt CMakeSelectBuildType
+<leader>kl CMakeClean
+
+<leader>kk CompilerOpen (select compiler for current file/directory)
+<leader>ko CompilerOpen (select compiler for file/directory in clipboard)
+<leader>kx CompilerStop (clean compile result)
+<leader>kr CompilerStopRedo (clean compile result and redo)
+<leader>ks CompilerToggleResults (toggle compile result)
+```
+
 ## Annotation
 
 - normal mode
@@ -212,6 +240,8 @@ L — inner-most child
 
 ## Buffer & Tab & Window
 
+- normal mode
+
 ```
 <M-w> Find Buffer
 <M-n> Next Buffer
@@ -225,6 +255,8 @@ L — inner-most child
 ```
 
 ## Find
+
+- normal mode
 
 ```
 <M-o> Telescope luasnip
@@ -255,7 +287,6 @@ L — inner-most child
 <leader>fr Find Registers
 <leader>fj Find Jumplist
 <leader>fn Find notifications
-<leader>fs Browse Sessions
 
 <leader>fC Find Commands
 <leader>fk Find Keymap
@@ -270,6 +301,8 @@ L — inner-most child
 
 ## UI
 
+- normal mode
+
 ```
 <leader>uw Toggle wrap
 <leader>uW Toggle wrapscan
@@ -282,9 +315,22 @@ L — inner-most child
 <leader>ux Toggle Twilight (focus on AST)
 <leader>ud Toggle diagnostics
 <leader>uD Toggle virtual diagnostics lines (lsp_lines.nvim)
+
+<C-M-m> MarkdownPreview
+```
+
+## Project
+
+- normal mode
+
+```
+<leader>fs Browse sessions
+<leader>fp Set Project Root
 ```
 
 ## Local
+
+- normal mode
 
 ```
 <leader>,, Set cwd or Open file with clipboard path
@@ -303,25 +349,6 @@ L — inner-most child
 <leader>,. ToggleTerm xtools (python)
 <leader>,x xtools exec (python)
 
-<leader>,p Set Project Root (project.nvim)
-
-<leader>kc Set CMake Root
-<leader>ka CMakeLaunchArgs
-<leader>kb CMakeBuild
-<leader>kB CMakeQuickBuild
-<leader>kd CMakeDebug
-<leader>ke CMakeSelectLaunchTarget
-<leader>kf CMakeShowTargetFiles
-<leader>kg CMakeGenerate
-<leader>kt CMakeSelectBuildType
-<leader>kl CMakeClean
-
-<leader>kk CompilerOpen (select compiler for current file/directory)
-<leader>ko CompilerOpen (select compiler for file/directory in clipboard)
-<leader>kx CompilerStop (clean compile result)
-<leader>kr CompilerStopRedo (clean compile result and redo)
-<leader>ks CompilerToggleResults (toggle compile result)
-
 <leader>,r Overseer Run Task
 <leader>,oo Toggle Overseer
 <leader>,oi Overseer Info
@@ -333,6 +360,16 @@ L — inner-most child
 ```
 
 # Plugin
+
+## markdown-preview.nvim
+
+https://github.com/iamcco/markdown-preview.nvim
+
+- normal mode
+
+```
+<C-M-m> MarkdownPreview
+```
 
 ## nvim-spectre
 
@@ -593,8 +630,8 @@ https://github.com/ahmedkhalf/project.nvim
 - normal mode
 
 ```
-<leader>fs -> Browse sessions
-<leader>,p -> Set Project Root
+<leader>fs Browse sessions
+<leader>fp Set Project Root
 ```
 
 - Telescope

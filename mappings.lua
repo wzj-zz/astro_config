@@ -104,6 +104,9 @@ return {
       desc = "Search workspace symbols",
     },
 
+    ["<leader>fp"] = { "<cmd>ProjectRoot<cr>", desc = "Set Project Root" },
+    ["<leader>fs"] = { "<cmd>Telescope projects<cr>", desc = "Browse Sessions" },
+
     ["<leader>fe"] = {
       "<cmd>lua require('telescope').extensions.live_grep_args.live_grep_args()<cr>",
       desc = "Find Jumplist",
@@ -112,7 +115,6 @@ return {
     ["<leader>fz"] = { "<cmd>Telescope zoxide list<CR>", desc = "Telescope zoxide" },
     ["<leader>fj"] = { function() require("telescope.builtin").jumplist() end, desc = "Find Jumplist" },
     ["<leader>fl"] = { function() require("telescope.builtin").filetypes() end, desc = "Select Language" },
-    ["<leader>fs"] = { "<cmd>Telescope projects<cr>", desc = "Browse Sessions" },
     ["<leader>fg"] = { "<cmd>Telescope ast_grep<cr>", desc = "AST Grep" },
 
     ["<leader>uW"] = { "<cmd>set wrapscan!<cr>", desc = "Toggle wrapscan" },
@@ -151,6 +153,8 @@ return {
     ["<leader>kl"] = { "<cmd>CMakeClean<cr>", desc = "CMakeClean" },
     ["<leader>k"] = { name = "C/CPP Action" },
 
+    ["<C-M-m>"] = { "<cmd>MarkdownPreview<cr>", desc = "MarkdownPreview" },
+
     ["<leader>,,"] = {
       function()
         user_utils.adjust_path_from_clip()
@@ -169,7 +173,6 @@ return {
 
     ["<leader>,q"] = { "<cmd>copen<cr>", desc = "Open QuickFix (bqf)" },
     ["<leader>,l"] = { "<cmd>lopen<cr>", desc = "Open Location (bqf)" },
-    ["<leader>,p"] = { "<cmd>ProjectRoot<cr>", desc = "Set Project Root" },
 
     ["<leader>,x"] = {
       function() require("noice").redirect "w !xt -x -d" end,
