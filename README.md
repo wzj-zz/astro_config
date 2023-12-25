@@ -117,10 +117,10 @@ L — inner-most child
 <M-c> Incoming Calls
 <S-M-c> Outgoing Calls
 
+<leader>lh Signature help
 <leader>lf Format Buffer
 <leader>lr Rename current symbol
 <leader>lg Search workspace symbols
-<leader>lx Search diagnostics
 <leader>li LSP information
 ```
 

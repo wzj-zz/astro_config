@@ -104,11 +104,6 @@ return {
       desc = "Search workspace symbols",
     },
 
-    ["<leader>lx"] = {
-      function() require("telescope.builtin").diagnostics() end,
-      desc = "Search diagnostics",
-    },
-
     ["<leader>fe"] = {
       "<cmd>lua require('telescope').extensions.live_grep_args.live_grep_args()<cr>",
       desc = "Find Jumplist",
