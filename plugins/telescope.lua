@@ -91,6 +91,13 @@ return {
             n = { ["<c-t>"] = trouble.open_with_trouble },
           },
         },
+        pickers = {
+          live_grep = {
+            mappings = {
+              i = { ["<c-f>"] = require("telescope.actions").to_fuzzy_refine },
+            },
+          },
+        },
         extensions = {
           aerial = {
             show_nesting = {
