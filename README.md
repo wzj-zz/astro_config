@@ -19,7 +19,7 @@ a parameter
 f function
 k block
 c class
-? conditional
+v conditional
 l loop
 ```
 
