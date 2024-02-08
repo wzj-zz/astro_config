@@ -57,8 +57,8 @@ https://github.com/ThePrimeagen/harpoon/tree/harpoon2
 - normal mode
 
 ```
-<S-M-u> Previous function start
-<S-M-i> Next function start
+[f Previous function start
+]f Next function start
 
 <M-h> Previous callsite start
 <M-l> Next callsite start
@@ -83,7 +83,11 @@ https://github.com/ThePrimeagen/harpoon/tree/harpoon2
 <M-k> Previous Indent
 <M-j> Next Indent
 
-<M-[> Previous Mark <M-]> Next Mark
+<S-M-u> Go to indent scope top
+<S-M-i> Go to indent scope bottom
+
+<M-[> Previous Mark
+<M-]> Next Mark
 
 <S-M-j> Next Recently Set Highlight
 <S-M-k> Previous Recently Set Highlight

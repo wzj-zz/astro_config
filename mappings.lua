@@ -30,9 +30,6 @@ return {
       desc = "LSP Symbols",
     },
 
-    ["<S-M-u>"] = { "<cmd>normal [f<cr>", desc = "Previous function start" },
-    ["<S-M-i>"] = { "<cmd>normal ]f<cr>", desc = "Next function start" },
-
     ["<M-h>"] = { "<cmd>normal [s<cr>", desc = "Previous callsite start" },
     ["<M-l>"] = { "<cmd>normal ]s<cr>", desc = "Next callsite start" },
 
@@ -56,6 +53,8 @@ return {
 
     ["<M-k>"] = { "<cmd>normal [u<cr>", desc = "Previous Indent" },
     ["<M-j>"] = { "<cmd>normal ]u<cr>", desc = "Next Indent" },
+    ["<S-M-u>"] = { "<cmd>normal [i<cr>", desc = "Go to indent scope top" },
+    ["<S-M-i>"] = { "<cmd>normal ]i<cr>", desc = "Go to indent scope bottom" },
 
     ["<M-[>"] = { "<cmd>normal m[<cr>", desc = "Previous Mark" },
     ["<M-]>"] = { "<cmd>normal m]<cr>", desc = "Next Mark" },
