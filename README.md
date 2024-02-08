@@ -112,6 +112,7 @@ L — inner-most child
 ```
 <M-s> Symbols Outline -> aerial.nvim
 <M-f> Search Symbols
+<S-M-f> LSP Symbols
 
 <M-d> Goto Definition
 <M-r> Goto References

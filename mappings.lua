@@ -25,6 +25,10 @@ return {
       end,
       desc = "Search Symbols",
     },
+    ["<S-M-f>"] = {
+      function() require("telescope.builtin").lsp_document_symbols() end,
+      desc = "LSP Symbols",
+    },
 
     ["<S-M-u>"] = { "<cmd>normal [f<cr>", desc = "Previous function start" },
     ["<S-M-i>"] = { "<cmd>normal ]f<cr>", desc = "Next function start" },
