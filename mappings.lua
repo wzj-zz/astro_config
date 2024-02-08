@@ -175,7 +175,10 @@ return {
     ["<leader>,l"] = { "<cmd>lopen<cr>", desc = "Open Location (bqf)" },
 
     ["<leader>,x"] = {
-      function() require("noice").redirect "w !xt -x -d" end,
+      function()
+        user_utils.set_clip(user_utils.get_buf_content())
+        user_utils.new_term_cmd_float { cmd = "xt -c -d", display_name = "xtools_exec", close_on_exit = false }
+      end,
       desc = "xtools exec",
     },
 
@@ -235,7 +238,8 @@ return {
       function()
         local line_begin = vim.fn.getpos("v")[2]
         local line_end = vim.fn.getcurpos()[2]
-        require("noice").redirect(line_begin .. "," .. line_end .. " w !xt -x -d")
+        user_utils.set_clip(user_utils.get_buf_content(line_begin, line_end))
+        user_utils.new_term_cmd_float { cmd = "xt -c -d", display_name = "xtools_exec", close_on_exit = false }
       end,
       desc = "xt exec",
     },

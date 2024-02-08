@@ -45,6 +45,12 @@ function M.get_cursor()
   return current_cursor
 end
 
+function M.get_buf_content(line_begin, line_end)
+  line_begin = line_begin or 1
+  line_end = line_end or "$"
+  return vim.fn.join(vim.fn.getline(line_begin, line_end), "\n")
+end
+
 function M.run(cmd, input) return vim.fn.system(cmd, input) end
 
 ------------------------------------------------------------------------------
@@ -58,6 +64,11 @@ function M.adjust_path_from_clip() return M.run "xt -b c2V0X2NsaXAoZmwwKGdldF9jb
 function M.new_term_cmd_vertical(opts)
   local term = require("toggleterm.terminal").Terminal:new(opts)
   term:toggle(80, "vertical")
+end
+
+function M.new_term_cmd_float(opts)
+  local term = require("toggleterm.terminal").Terminal:new(opts)
+  term:toggle(80, "float")
 end
 
 ------------------------------------------------------------------------------
