@@ -184,6 +184,14 @@ return {
       end,
       desc = "xtools exec",
     },
+    ["<leader>,v"] = {
+      function()
+        user_utils.set_clip(user_utils.get_buf_content())
+        user_utils.new_term_cmd_float { cmd = "xt -c -e stdout -d", display_name = "xtools_exec", close_on_exit = false }
+      end,
+      desc = "xtools eval",
+    },
+    
 
     ["<leader>,."] = {
       function()
@@ -244,7 +252,16 @@ return {
         user_utils.set_clip(user_utils.get_buf_content(line_begin, line_end))
         user_utils.new_term_cmd_float { cmd = "xt -c -d", display_name = "xtools_exec", close_on_exit = false }
       end,
-      desc = "xt exec",
+      desc = "xtools exec",
+    },
+    ["<leader>,v"] = {
+      function()
+        local line_begin = vim.fn.getpos("v")[2]
+        local line_end = vim.fn.getcurpos()[2]
+        user_utils.set_clip(user_utils.get_buf_content(line_begin, line_end))
+        user_utils.new_term_cmd_float { cmd = "xt -c -e stdout -d", display_name = "xtools_exec", close_on_exit = false }
+      end,
+      desc = "xtools eval",
     },
     ["<leader>,"] = { name = "Local" },
 

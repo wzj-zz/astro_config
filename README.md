@@ -355,6 +355,7 @@ L — inner-most child
 <leader>,s ToggleTerm shell
 <leader>,. ToggleTerm xtools (python)
 <leader>,x xtools exec (python)
+<leader>,v xtools eval (python)
 
 <leader>,r Overseer Run Task
 <leader>,oo Toggle Overseer
