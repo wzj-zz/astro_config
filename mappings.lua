@@ -191,7 +191,6 @@ return {
       end,
       desc = "xtools eval",
     },
-    
 
     ["<leader>,."] = {
       function()
@@ -249,6 +248,12 @@ return {
       function()
         local line_begin = vim.fn.getpos("v")[2]
         local line_end = vim.fn.getcurpos()[2]
+        local line_tmp
+        if line_begin > line_end then
+          line_tmp = line_begin
+          line_begin = line_end
+          line_end = line_tmp
+        end
         user_utils.set_clip(user_utils.get_buf_content(line_begin, line_end))
         user_utils.new_term_cmd_float { cmd = "xt -c -d", display_name = "xtools_exec", close_on_exit = false }
       end,
@@ -258,6 +263,12 @@ return {
       function()
         local line_begin = vim.fn.getpos("v")[2]
         local line_end = vim.fn.getcurpos()[2]
+        local line_tmp
+        if line_begin > line_end then
+          line_tmp = line_begin
+          line_begin = line_end
+          line_end = line_tmp
+        end
         user_utils.set_clip(user_utils.get_buf_content(line_begin, line_end))
         user_utils.new_term_cmd_float { cmd = "xt -c -e stdout -d", display_name = "xtools_exec", close_on_exit = false }
       end,
