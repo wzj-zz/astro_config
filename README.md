@@ -63,7 +63,7 @@ https://github.com/ThePrimeagen/harpoon/tree/harpoon2
 <M-h> Previous callsite start
 <M-l> Next callsite start
 
-<S-M-v> Previous conditional start
+<M-x> Previous conditional start
 <M-v> Next conditional start
 
 <S-M-g> Previous loop start

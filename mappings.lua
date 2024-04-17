@@ -33,7 +33,7 @@ return {
     ["<M-h>"] = { "<cmd>normal [s<cr>", desc = "Previous callsite start" },
     ["<M-l>"] = { "<cmd>normal ]s<cr>", desc = "Next callsite start" },
 
-    ["<S-M-v>"] = { "<cmd>normal [v<cr>", desc = "Previous conditional start" },
+    ["<M-x>"] = { "<cmd>normal [v<cr>", desc = "Previous conditional start" },
     ["<M-v>"] = { "<cmd>normal ]v<cr>", desc = "Next conditional start" },
 
     ["<S-M-g>"] = { "<cmd>normal [l<cr>", desc = "Previous loop start" },
